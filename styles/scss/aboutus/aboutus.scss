@@ -1,0 +1,42 @@
+.aboutus {
+    //background: url("./public/img/about.png") no-repeat center/cover;
+    //min-height: 80vh;
+  margin-bottom: 4%;
+
+  &-general {
+    display: flex;
+    justify-content: center;
+
+
+    &__block {
+      width: 90%;
+      height: 410px;
+      background: rgba(19, 19, 19, 0.6);
+      margin-top: -36%;
+      z-index: 34;
+      &__title {
+        font-family: 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 41px;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 20px 0 50px 0;
+      }
+
+      &__item {
+        width: 700px;
+        font-family: 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        padding: 0 3rem;
+      }
+
+    }
+
+  }
+}

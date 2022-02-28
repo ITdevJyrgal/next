@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/next.iml" filepath="$PROJECT_DIR$/.idea/next.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../REACT/redux/.idea/reactredax.iml" filepath="$PROJECT_DIR$/../../REACT/redux/.idea/reactredax.iml" />
     </modules>
   </component>
 </project>
