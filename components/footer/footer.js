@@ -22,8 +22,8 @@ export default function Footer() {
                                 <i className="fas  fa-phone"/>
                             </div>
                             <div style={{
-                                display:"flex",
-                                flexDirection:"column"
+                                display: "flex",
+                                flexDirection: "column"
                             }}>
                                 <a href="tel:0550 01 22 08" className="footer-general__item2">0550 01 22 08</a>
                                 <a href="tel:0777 32 95 46" className="footer-general__item2">0777 32 95 46</a>
@@ -34,7 +34,7 @@ export default function Footer() {
                     <div>
                         <h1 className="footer-general__title2">Социальные сети</h1>
                         <div style={{
-                            display:"flex"
+                            display: "flex"
                         }}>
                             <div className="footer-general__icons">
                                 <i className="fab fa-whatsapp"/>

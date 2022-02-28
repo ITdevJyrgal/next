@@ -525,7 +525,6 @@
 .footer-general__icon {
   color: white;
   font-size: 20px;
-  transform: rotate(95deg);
   position: absolute;
   margin: 12px -35px;
 }

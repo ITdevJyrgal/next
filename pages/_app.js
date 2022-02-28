@@ -1,6 +1,7 @@
 import Head from "next/head";
 // import '../styles/global.css'
 import "./../styles/scss/index.scss"
+import '../styles/icons.css'
 
 function MyApp({ Component, pageProps }) {
   return (
