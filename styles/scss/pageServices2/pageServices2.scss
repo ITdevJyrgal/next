@@ -1,0 +1,61 @@
+.services2 {
+  padding: 70px 0;
+
+  &-general {
+    .slick-list {
+      overflow: hidden;
+
+      .slick-track {
+        display: flex;
+        width: 97%;
+      }
+    }
+
+    &__title {
+      font-family: 'Arial', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      color: #004333;
+      text-align: center;
+      margin-bottom: 10px;
+      padding-top: 20px;
+    }
+
+    &__block {
+      width: 353px;
+      height: 446px;
+      background: #FFFFFF;
+      box-shadow: 0 10px 30px rgb(138, 138, 138);
+      border-radius: 5px;
+      margin: 15px 0  ;
+    }
+    &__item {
+      font-family: 'Arial',sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 16px;
+      color: #004333;
+      padding: 0 10px;
+    }
+  }
+}
+
+
+.slick-dots {
+  border-radius: 50%;
+  font-size: 0;
+
+  ul {
+    li {
+      button {
+        border-radius: 50%;
+        font-size: 0;
+      }
+    }
+  }
+
+}
+
+

@@ -1,0 +1,75 @@
+.pageservices {
+  padding: 70px 0;
+}
+.pageservices-general .slick-list {
+  overflow: hidden;
+}
+.pageservices-general .slick-list .slick-track {
+  display: flex;
+  width: 97%;
+}
+.pageservices-general__block {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.pageservices-general__block__title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #00AE84;
+  margin-bottom: 10px;
+}
+.pageservices-general__block__item {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #00AE84;
+  padding: 20px;
+}
+.pageservices-general__block__veneta {
+  width: 500px;
+  height: 240px;
+  overflow-y: scroll;
+  padding: 10px 10px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 20px rgba(192, 192, 192, 0.25);
+  border-radius: 5px;
+}
+.pageservices-general__block__item2 {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #004333;
+}
+.pageservices-general__block__img {
+  padding-top: 35px;
+}
+
+.slick-slider .slick-prev {
+  left: 10px;
+  position: absolute;
+  z-index: 999;
+  background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+  transform: rotate(180deg);
+}
+.slick-slider .slick-next {
+  right: 10px;
+}
+.slick-slider .slick-arrow {
+  top: 47%;
+  height: 26px;
+  width: 14px;
+  position: absolute;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=pageServices.css.map */

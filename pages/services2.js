@@ -1,9 +1,6 @@
 import Slider from "react-slick";
-import Work2date from "./work2date";
-import work2date from "./work2date";
-import Image from "next/image";
-
-
+import Image from "next/image"
+import PagesDate from "./pagesDate";
 export default function Reviews() {
 
     const settings = {
@@ -43,17 +40,18 @@ export default function Reviews() {
         ]
     };
     return (
-        <div className="work2">
-            <div className="work2-general">
+        <div className="services2">
+            <div className="services2-general">
                 <Slider {...settings}>
 
                     {
-                        work2date.map(el => {
+                        PagesDate.map(el => {
                             return (
                                 <div>
-                                    <div>
+                                    <div className="services2-general__block">
                                         <Image src={el.img} alt="img"/>
-                                        <p className="work2-general__title">{el.title}</p>
+                                        <h1 className="services2-general__title">{el.title}</h1>
+                                        <p className="services2-general__item">{el.item}</p>
                                     </div>
                                 </div>
                             )

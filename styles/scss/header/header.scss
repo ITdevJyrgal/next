@@ -1,5 +1,6 @@
 .header {
-  background: #0000005e;
+  background: var(--background);
+  transition: all .5s;
   padding: 15px 0;
   position: absolute;
   width: 100%;
@@ -58,6 +59,7 @@
       box-shadow: 0 4px 9px rgba(0, 69, 52, 0.35);
       border-radius: 34px;
       color: white;
+      margin-top: 15px;
       font-size: 17px;
       transition: .3s;
       border: none;

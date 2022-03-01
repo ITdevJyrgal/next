@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .header {
-  background: #0000005e;
+  background: var(--background);
+  transition: all 0.5s;
   padding: 15px 0;
   position: absolute;
   width: 100%;
@@ -50,6 +51,7 @@
   box-shadow: 0 4px 9px rgba(0, 69, 52, 0.35);
   border-radius: 34px;
   color: white;
+  margin-top: 15px;
   font-size: 17px;
   transition: 0.3s;
   border: none;
@@ -231,10 +233,15 @@
   width: 520px;
   height: 100px;
   background: rgba(0, 174, 132, 0.13);
+  box-shadow: 0 20px 20px rgba(136, 136, 136, 0.42);
   border-radius: 5px;
   align-items: center;
   margin: 0.5rem 1rem;
   padding: 0 1.5rem;
+  transition: 0.2s;
+}
+.services-general__block:hover {
+  transform: scale(1.1);
 }
 .services-general__block__img {
   width: 24%;
@@ -448,6 +455,9 @@
   outline: none;
   margin: 15px 9%;
 }
+.question-general__block__input2 {
+  margin: 10px 140px;
+}
 .question-general__block__btn {
   width: 492px;
   height: 60px;
@@ -648,6 +658,137 @@
   position: absolute;
   padding-left: 70px;
   text-align: center;
+}
+
+.slick-dots {
+  border-radius: 50%;
+  font-size: 0;
+}
+.slick-dots ul li button {
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.pageservices {
+  padding-top: 80px;
+}
+.pageservices-general .slick-list {
+  overflow: hidden;
+}
+.pageservices-general .slick-list .slick-track {
+  display: flex;
+  width: 97%;
+}
+.pageservices-general__block {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.pageservices-general__block__title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #00AE84;
+  margin-bottom: 10px;
+}
+.pageservices-general__block__item {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #00AE84;
+  padding: 20px;
+}
+.pageservices-general__block__veneta {
+  width: 500px;
+  height: 240px;
+  overflow-y: scroll;
+  padding: 10px 10px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 20px rgba(192, 192, 192, 0.25);
+  border-radius: 5px;
+}
+.pageservices-general__block__item2 {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #004333;
+  margin-bottom: 14px;
+}
+.pageservices-general__block__img {
+  padding-top: 35px;
+}
+
+.slick-slider .slick-prev {
+  left: 10px;
+  position: absolute;
+  z-index: 999;
+  background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+  transform: rotate(180deg);
+}
+.slick-slider .slick-next {
+  right: 10px;
+}
+.slick-slider .slick-arrow {
+  top: 47%;
+  height: 26px;
+  width: 14px;
+  position: absolute;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+  background-repeat: no-repeat;
+}
+
+.services2 {
+  padding: 70px 0;
+}
+.services2-general .slick-list {
+  overflow: hidden;
+}
+.services2-general .slick-list .slick-track {
+  display: flex;
+  width: 97%;
+}
+.services2-general__title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #004333;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+.services2-general__block {
+  width: 353px;
+  height: 446px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 30px #8a8a8a;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+.services2-general__item {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #004333;
+  padding: 0 10px;
+}
+
+.slick-dots {
+  border-radius: 50%;
+  font-size: 0;
+}
+.slick-dots ul li button {
+  border-radius: 50%;
+  font-size: 0;
 }
 
 * {

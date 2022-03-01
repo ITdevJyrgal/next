@@ -1,4 +1,9 @@
 export default function Hero() {
+
+    // let btn = document.querySelector(".header-general__btn")
+    // btn.addEventListener("click", () => {
+    //     document.querySelector(".hero-general__items").style.right = "0";
+    // })
     return (
         <section id="hero">
             <div className="container">

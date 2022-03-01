@@ -1,14 +1,14 @@
-.work2 {
+.services2 {
   padding: 70px 0;
 }
-.work2-general .slick-list {
+.services2-general .slick-list {
   overflow: hidden;
 }
-.work2-general .slick-list .slick-track {
+.services2-general .slick-list .slick-track {
   display: flex;
   width: 97%;
 }
-.work2-general__title {
+.services2-general__title {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -29,4 +29,4 @@
   font-size: 0;
 }
 
-/*# sourceMappingURL=work2.css.map */
+/*# sourceMappingURL=pageServices2.css.map */

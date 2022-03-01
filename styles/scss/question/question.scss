@@ -40,6 +40,11 @@
         outline: none;
         margin: 15px 9%;
       }
+
+      &__input2 {
+        margin: 10px 140px;
+      }
+
       &__btn {
         width: 492px;
         height: 60px;
@@ -52,6 +57,7 @@
         color: #FFFFFF;
         transition: .4s;
         border: none;
+
         &:hover {
           background: transparent;
           border: 1px solid #00AE84;

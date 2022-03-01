@@ -1,5 +1,6 @@
 .services {
   margin-bottom: 3%;
+
   &-general {
     display: flex;
     flex-wrap: wrap;
@@ -28,10 +29,16 @@
       width: 520px;
       height: 100px;
       background: rgba(0, 174, 132, 0.13);
+      box-shadow: 0 20px 20px rgba(136, 136, 136, 0.42);
       border-radius: 5px;
       align-items: center;
       margin: .5rem 1rem;
-     padding: 0 1.5rem;
+      padding: 0 1.5rem;
+      transition: .2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+
       &__img {
         width: 24%;
         height: 48%;

@@ -1,2 +1,26 @@
 @import "scss/index.scss";
 @import "icons.css";
+
+#__next{
+    --background: #fff;
+    --text-primary: #000;
+    --text-secondary: #055dc2;
+    --accent: #055dc2;
+    --border: rgb(155, 155, 155);
+    --form-bg: #fff;
+    --block: black;
+}
+
+[data-theme='dark'] {
+    --background: #000;
+    --text-primary: #fff;
+    --text-secondary: #055dc2;
+    --accent: #055dc2;
+    --border: rgb(53, 53, 53);
+    --form-bg: #191919;
+    --block: white;
+}
+
+body {
+    transition: all .7s;
+}

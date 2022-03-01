@@ -27,7 +27,7 @@ export default function Work() {
             <div className="work">
                 <div className="container">
                     <div className="work-general">
-                        <div>
+
                             <Link href={"/"}>
                                 <div style={{
                                     paddingTop: "40px",
@@ -37,7 +37,7 @@ export default function Work() {
                                     <Image src={img} alt={img}/>
                                 </div>
                             </Link>
-                        </div>
+
                         <div style={{
                             display: "flex",
                             justifyContent: "space-around",
