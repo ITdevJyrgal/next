@@ -1,5 +1,4 @@
 import Slider from "react-slick";
-import Work2date from "./work2date";
 import work2date from "./work2date";
 import Image from "next/image";
 
@@ -50,7 +49,7 @@ export default function Reviews() {
                     {
                         work2date.map(el => {
                             return (
-                                <div>
+                                <div key={el.id}>
                                     <div>
                                         <Image src={el.img} alt="img"/>
                                         <p className="work2-general__title">{el.title}</p>

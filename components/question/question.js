@@ -28,7 +28,7 @@ export default function Question() {
                                             />
                                         )}
 
-                                        defaultValue=""
+                                        defaultValue="KGZ"
                                         name="phone_number"
                                         control={control}
 

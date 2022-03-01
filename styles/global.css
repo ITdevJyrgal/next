@@ -1,7 +1,7 @@
 @import "scss/index.scss";
 @import "icons.css";
 
-#__next{
+* {
     --background: #fff;
     --text-primary: #000;
     --text-secondary: #055dc2;
