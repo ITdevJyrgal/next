@@ -1,0 +1,12 @@
+.work {
+  padding: 70px 0;
+}
+.work-general .slick-list {
+  overflow: hidden;
+}
+.work-general .slick-list .slick-track {
+  display: flex;
+  width: 97%;
+}
+
+/*# sourceMappingURL=work.css.map */

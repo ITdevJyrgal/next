@@ -6,7 +6,9 @@ import hai from "./../../public/img/hai.jpg"
 import xag from "./../../public/img/xag.jpg"
 import drag from "./../../public/img/drag.jpg"
 import pod from "./../../public/img/pod.svg"
-
+import Link from 'next/link'
+import work from "../../pages/work"
+import services from "../../pages/services"
 
 export default function Out() {
     return (
@@ -27,11 +29,12 @@ export default function Out() {
                                     <p className="our-general__block__gen">Трехэтажный загородный коттедж с плоской
                                         крышей</p>
                                 </div>
-                                <div  style={{
+                                <div style={{
                                     marginLeft: '360px',
-
                                 }}>
-                                    <Image src={pod} alt="" className="our-general__block__pod"/>
+                                    <Link href={"work"}>
+                                        <Image src={pod} alt="" className="our-general__block__pod"/>
+                                    </Link>
                                 </div>
 
                             </div>
@@ -46,7 +49,10 @@ export default function Out() {
                                 <div style={{
                                     marginLeft: "210px"
                                 }}>
-                                    <Image src={pod} alt="img" className="our-general__block__pod"/>
+
+                                    <Link href={"services"}>
+                                        <Image src={pod} alt="img" className="our-general__block__pod"/>
+                                    </Link>
                                 </div>
 
                             </div>
@@ -62,7 +68,9 @@ export default function Out() {
                                 <div style={{
                                     marginLeft: '360px'
                                 }}>
-                                    <Image src={pod} alt="" className="our-general__block__pod"/>
+                                    <Link href={"/work"}>
+                                        <Image src={pod} alt="" className="our-general__block__pod"/>
+                                    </Link>
                                 </div>
 
                             </div>
@@ -77,8 +85,9 @@ export default function Out() {
                                 <div style={{
                                     marginLeft: "210px"
                                 }}>
-                                    <Image src={pod} alt="img" className="our-general__block__pod"/>
-                                </div>
+                                    <Link href={"/services"}>
+                                        <Image src={pod} alt="img" className="our-general__block__pod"/>
+                                    </Link></div>
 
                             </div>
                         </div>
@@ -93,7 +102,9 @@ export default function Out() {
                                 <div style={{
                                     marginLeft: '360px'
                                 }}>
-                                    <Image src={pod} alt="" className="our-general__block__pod"/>
+                                    <Link href={"/work"}>
+                                        <Image src={pod} alt="" className="our-general__block__pod"/>
+                                    </Link>
                                 </div>
 
                             </div>
@@ -108,7 +119,9 @@ export default function Out() {
                                 <div style={{
                                     marginLeft: "210px"
                                 }}>
-                                    <Image src={pod} alt="img" className="our-general__block__pod"/>
+                                    <Link href={"/services"}>
+                                        <Image src={pod} alt="img" className="our-general__block__pod"/>
+                                    </Link>
                                 </div>
 
                             </div>

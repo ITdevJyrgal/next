@@ -8,6 +8,7 @@ import Out from "../components/out/out";
 import Reviews from "../components/reviews/reviews";
 import Question from "../components/question/question";
 
+
 export default function Home() {
     return (
         <HomeLayout>

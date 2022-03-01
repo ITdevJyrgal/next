@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .header {
+  background: #0000005e;
   padding: 15px 0;
   position: absolute;
   width: 100%;
@@ -73,7 +74,7 @@
   background: url("../../../public/img/bg.png") no-repeat center/cover;
 }
 #hero .hero-general {
-  padding-top: 15%;
+  padding-top: 10%;
 }
 #hero .hero-general__title {
   text-align: center;
@@ -81,7 +82,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
-  line-height: 44px;
   color: white;
   margin-bottom: 1.1%;
 }
@@ -332,6 +332,7 @@
   justify-content: space-between;
   position: absolute;
   margin-top: -100px;
+  padding: 15px 0;
 }
 .our-general__block__img {
   width: 900px;
@@ -554,6 +555,99 @@
 .footer-general__zero {
   color: white;
   font-size: 17px;
+}
+
+.work {
+  padding: 70px 0;
+}
+.work-general .slick-list {
+  overflow: hidden;
+}
+.work-general .slick-list .slick-track {
+  display: flex;
+  width: 97%;
+}
+.work-general__block {
+  width: 750px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.work-general__block__title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #00AE84;
+  margin-bottom: 10px;
+}
+.work-general__block__item {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #00AE84;
+  padding: 20px;
+}
+.work-general__block__veneta {
+  width: 500px;
+  height: 240px;
+  overflow-y: scroll;
+  padding: 10px 10px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 20px rgba(192, 192, 192, 0.25);
+  border-radius: 5px;
+}
+.work-general__block__item2 {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #004333;
+}
+
+.slick-slider .slick-prev {
+  left: 10px;
+  position: absolute;
+  z-index: 999;
+  background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+  transform: rotate(180deg);
+}
+.slick-slider .slick-next {
+  right: 10px;
+}
+.slick-slider .slick-arrow {
+  top: 47%;
+  height: 26px;
+  width: 14px;
+  position: absolute;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+  background-repeat: no-repeat;
+}
+
+.work2 {
+  padding: 70px 0;
+}
+.work2-general .slick-list {
+  overflow: hidden;
+}
+.work2-general .slick-list .slick-track {
+  display: flex;
+  width: 97%;
+}
+.work2-general__title {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-top: -50px;
+  position: absolute;
+  padding-left: 70px;
+  text-align: center;
 }
 
 * {

@@ -1,0 +1,43 @@
+.work2 {
+  padding: 70px 0;
+
+  &-general {
+    .slick-list {
+      overflow: hidden;
+
+      .slick-track {
+        display: flex;
+        width: 97%;
+      }
+
+    }
+
+    &__title {
+      font-family: 'Arial', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      color: #FFFFFF;
+      margin-top: -50px;
+      position: absolute;
+      padding-left:70px;
+      text-align: center;
+    }
+  }
+}
+
+
+//.slick-dots {
+//  border-radius: 50%;
+//  font-size: 0;
+//  ul {
+//    li {
+//      button {
+//        border-radius: 50%;
+//        font-size: 0;
+//      }
+//    }
+//  }
+//
+//}
+
