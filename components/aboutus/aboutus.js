@@ -1,19 +1,12 @@
-import Image from "next/image";
-import about from "./../../public/img/about.png"
-
 export default function AboutUs() {
 
-    const styles ={
-      img:about
-    }
     return (
         <div className="aboutus">
             <div className="container2">
-                <Image src={styles.img} alt="img"/>
                 <div className="aboutus-general">
                     <div className="aboutus-general__block">
                         <h1 className="aboutus-general__block__title">О НАС</h1>
-                        <div style={{display:"flex", justifyContent:"space-between"}}>
+                        <div style={{display:"flex", justifyContent:"space-between", flexWrap:"wrap"}}>
                             <div>
                                 <p className="aboutus-general__block__item">Компания Zero Waste : занимается
                                     изготовлением изделий из полипропилена. Также наши высококвалифицированные

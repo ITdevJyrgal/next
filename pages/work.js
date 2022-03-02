@@ -78,9 +78,8 @@ export default function Work() {
                         </Link>
 
                         <div style={{
-                            display: "flex",
-                            justifyContent: "space-around",
-                            flexWrap: "wrap"
+                            display:"flex",
+                            justifyContent:"space-around"
                         }}>
                             <div className="work-general__block">
                                 <Slider {...settings} >
@@ -102,7 +101,7 @@ export default function Work() {
                                 </Slider>
                             </div>
 
-                            <div>
+
                                 <div>
                                     <h1 className="work-general__block__title">Бассейны из полипропилена</h1>
                                     <div style={{
@@ -128,7 +127,7 @@ export default function Work() {
 
 
                                 </div>
-                            </div>
+
                         </div>
                     </div>
 

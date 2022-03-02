@@ -12,7 +12,7 @@
     }
 
     &__block {
-      width: 750px;
+      width: 700px;
       height: 400px;
       overflow: hidden;
       position: relative;
@@ -22,7 +22,7 @@
         font-style: normal;
         font-weight: bold;
         color: #00AE84;
-        margin-bottom: 10px;
+        font-size: 30px;
       }
 
       &__item {
@@ -31,7 +31,7 @@
         font-weight: 600;
         font-size: 24px;
         color: #00AE84;
-        padding: 20px;
+        padding: 20px ;
       }
 
       &__veneta {

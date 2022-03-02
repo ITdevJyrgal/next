@@ -1,13 +1,17 @@
 import Link from "next/link"
 import Switch from "@material-ui/core/Switch";
 import {useState} from "react";
-import {createMuiTheme} from '@material-ui/core/styles'
-import Typography from '@material-ui/core/Typography'
-import Paper from '@material-ui/core/Paper'
+// import Modal from "./modal/modal";
+
 
 
 export default function Header() {
+
+const [modalActive,setModalActive] = useState(true)
     const [dark, setDark] = useState(false)
+
+
+
     // const theme = createMuiTheme({
     //     palette: {
     //         type: dark ? 'dark' : 'light',
@@ -36,12 +40,11 @@ export default function Header() {
                                 <div className="header-general ">
                                     <div style={{
                                         cursor: "pointer"
-                                    }}>
-                                        <Link href={"/"}><h1 className="header-general__logo ">ZeroWaste</h1></Link>
+                                    }}><h1 className="header-general__logo ">ZeroWaste</h1>
                                     </div>
                                     <div style={{
                                         display: "flex",
-                                        alignItems: "center"
+                                        alignItems: "center",
                                     }}>
                                         <a href="/">   <h1 className="header-general__nav ">Главная</h1></a>
 
@@ -54,6 +57,9 @@ export default function Header() {
                                         <button className="header-general__btn ">
                                             <span className="header-general__btn__text">Свяжитесь с нами</span>
                                         </button>
+
+                                        {/*<Modal active={modalActive} setActive={setModalActive} />*/}
+
                                     </div>
                                 </div>
                             {/*</Typography>*/}
@@ -61,14 +67,6 @@ export default function Header() {
                     </div>
                 </header>
             {/*</ThemeProvider>*/}
-            {/*<Hero  data-theme={theme} />*/}
-            {/*<About  data-theme={theme} />*/}
-            {/*<AboutUs  data-theme={theme} />*/}
-            {/*<Services  data-theme={theme} />*/}
-            {/*<Job  data-theme={theme} />*/}
-            {/*<Out  data-theme={theme} />*/}
-            {/*<Reviews  data-theme={theme} />*/}
-            {/*<Question  data-theme={theme} />*/}
         </div>
     )
 }

@@ -33,7 +33,7 @@
       margin-top: -100px;
       background: #00E3AD;
       margin-bottom: 100px;
-      margin-left: -156px;
+      margin-left: -103px;
     }
 
     &__items {
@@ -45,13 +45,15 @@
       line-height: 29px;
       text-align: center;
       color: #FFFFFF;
+      padding-left: 24px;
 
     }
     &__titles {
       display: flex;
+      flex-wrap: wrap;
     }
 &__items2 {
-  padding: 0 11%;
+  padding: 0 9%;
 }
   }
 }

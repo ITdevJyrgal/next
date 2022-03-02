@@ -1,0 +1,80 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .aboutus-general__block__item {
+    width: 511px;
+  }
+  .aboutus-general__block {
+    width: 90%;
+    height: 347px;
+    margin-top: 32px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .aboutus-general__block {
+    width: 90%;
+    height: 380px;
+    margin-top: 32px;
+  }
+
+  .aboutus-general__block__item {
+    width: 100%;
+    padding-left: 67px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus-general__block__title {
+    font-size: 30px;
+    margin: 0 0 25px 0;
+  }
+  .aboutus-general__block__item {
+    font-size: 16px;
+    width: 100%;
+    padding-left: 67px;
+  }
+  .aboutus-general__block {
+    height: 340px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutus-general__block {
+    height: 438px;
+  }
+}
+
+@media (max-width: 415px) {
+  .aboutus-general__block__item {
+    font-size: 15px;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .aboutus-general__block {
+    height: 528px;
+  }
+}
+
+@media (max-width: 375px) {
+  .aboutus-general__block {
+    height: 563px;
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutus-general__block__title {
+    font-size: 24px;
+    margin: 0 0 25px 0;
+  }
+  .aboutus-general__block__item {
+    font-size: 15px;
+    width: 100%;
+    padding-left: 15px;
+  }
+  .aboutus-general__block {
+    height: 650px;
+  }
+}

@@ -1,28 +1,62 @@
-// import {useState} from "react";
-// import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
-// import Typography from '@material-ui/core/Typography'
-// import Paper from '@material-ui/core/Paper'
-// import Switch from '@material-ui/core/Switch'
+// import Link from "next/link";
+// import {useEffect} from "react";
 //
-// const DarkTheme = () => {
-//     const [dark, setDark] = useState(false)
+// // import {useIntl} from "react-intl";
 //
-//     const theme = createMuiTheme({
-//         palette: {
-//             type: dark ? 'dark' : 'light',
-//         },
-//     })
+// export default function BurgerMenu() {
+//     // const {formatMessage, locale} = useIntl()
 //
+//     const menu = () => {
+//         if ( menu) {
+//             const burgerMenu = document.querySelector(".burger__menu")
+//
+//             burgerMenu.addEventListener('click', () => {
+//                 document.querySelector(".burger__menu").classList.toggle("active")
+//                 document.querySelector(".menu").classList.toggle("m_active")
+//                 document.querySelector('#header').classList.toggle('menu-bg')
+//                 document.querySelector('.menu').classList.toggle('burger-menu-bg')
+//
+//             })
+//         }
+//     }
+//     useEffect(() => {
+//         menu();
+//     }, [])
 //     return (
-//         <ThemeProvider theme={theme}>
-//             <Switch checked={dark} onChange={() => setDark(!dark)} />
-//             <Paper>
-//                 <Typography variant='h1'>This is a h1 text</Typography>
+//         <div className="sm:flex md:hidden ">
+//             <div className="burger__menu">
+//                 <span className="burger"/>
+//             </div>
+//             <div className="menu">
+//                 <nav className="menu__nav-items">
+//                     <Link href={'/'}><a
+//                         className="font-medium text-gray-400 text-xl leading-5 mx-4 hover:text-white nav-item">
+//                         Башкы бет
+//                     </a>
+//                     </Link>
+//                     <Link href={'it-club'}>
+//                         <a
+//                             className="font-medium text-gray-400 text-xl leading-5 mx-4 hover:text-white nav-item">
+//                             IT-Клуб
+//                         </a>
+//                     </Link>
+//                     <Link href={'/all-courses'}>
+//                         <a
+//                             className="font-medium text-gray-400 text-xl leading-5 mx-4 hover:text-white nav-item">
+//                             Курстар
+//                         </a>
+//                     </Link>
 //
-//                 <Typography variant='body2'>This is a body2 text</Typography>
-//             </Paper>
-//         </ThemeProvider>
+//                     {/*<Link href={'/trips'}>*/}
+//                     <a
+//                         className="font-medium text-gray-700 text-xl leading-5 cursor-pointer  mx-4 nav-item">
+//                         IT-Кемп
+//                     </a>
+//                     {/*</Link>*/}
+//                     <a href="/#subscribe" className="menu__nav-items__btn">Жазылуу</a>
+//
+//                 </nav>
+//             </div>
+//         </div>
 //     )
 // }
-//
-// export default DarkTheme

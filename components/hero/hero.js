@@ -24,15 +24,12 @@ export default function Hero() {
                         <div className="hero-general__block"/>
 
                     </div>
-
                     <div className="hero-general__items2" >
                         <h1 className="hero-general__items"> Абсолютная
                             <br/>герметичность</h1>
                         <div className="hero-general__block"/>
 
                     </div>
-
-
                 </div>
             </div>
         </section>

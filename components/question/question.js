@@ -5,6 +5,7 @@ import {useForm, Controller} from "react-hook-form";
 
 export default function Question() {
     const {control, handleSubmit} = useForm();
+
     return (
         <div className="question">
             <div className="container">
@@ -24,15 +25,14 @@ export default function Question() {
                                     <Controller
                                         render={() => (
                                             <PhoneInput
-
+                                                country={"kg"}
                                             />
                                         )}
-
-                                        defaultValue="KGZ"
+                                        value="KG"
                                         name="phone_number"
                                         control={control}
 
-                                        rules={{ required: true }}
+                                        rules={{required: true}}
                                     />
 
 

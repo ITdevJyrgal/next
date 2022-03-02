@@ -11,7 +11,9 @@ export default function About () {
                 <div className="container">
                     <div className="about-general">
 
-                            <div style={{display:"flex"}}>
+                            <div style={{display:"flex",
+                            flexWrap:"wrap"
+                            }}>
                                 <div>
                                     <h1 className="about-general__item"> ПОЛИПРОПИЛЕН - пластический материал,
                                         отличающийся высокой прочностью при ударе
@@ -33,8 +35,8 @@ export default function About () {
                                     </span>
                                     </h1>
                                 </div>
-                                <div>
-                                    <Image src={mate} alt="img" className="about-general__img"/>
+                                <div className="about-general__img">
+                                    <Image src={mate} alt="img" />
                                 </div>
                             </div>
                     </div>

@@ -7,7 +7,8 @@ import Job from "../components/job/job";
 import Out from "../components/out/out";
 import Reviews from "../components/reviews/reviews";
 import Question from "../components/question/question";
-import Dark from "./../components/dark"
+import Modal from "./../components/header/modal/modal"
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
     return (
@@ -20,7 +21,7 @@ export default function Home() {
             <Out/>
             <Reviews/>
             <Question/>
-            {/*<Dark/>*/}
+            <Modal/>
         </HomeLayout>
     )
 }

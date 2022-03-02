@@ -1,19 +1,19 @@
 .aboutus {
-    //background: url("./public/img/about.png") no-repeat center/cover;
-    //min-height: 80vh;
+  background: url("./../../../public/img/about.png") no-repeat center/cover;
+  min-height: 80vh;
   margin-bottom: 4%;
 
   &-general {
     display: flex;
     justify-content: center;
-
+    align-items: center;
 
     &__block {
       width: 90%;
       height: 410px;
       background: rgba(19, 19, 19, 0.6);
-      margin-top: -36%;
       z-index: 34;
+      margin-top:6%;
       &__title {
         font-family: 'Arial', sans-serif;
         font-style: normal;
@@ -26,7 +26,7 @@
       }
 
       &__item {
-        width: 700px;
+        width: 600px;
         font-family: 'Arial', sans-serif;
         font-style: normal;
         font-weight: normal;
