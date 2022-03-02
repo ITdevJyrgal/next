@@ -20,7 +20,7 @@ export default function Home() {
             <Out/>
             <Reviews/>
             <Question/>
-            <Dark/>
+            {/*<Dark/>*/}
         </HomeLayout>
     )
 }

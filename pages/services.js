@@ -5,10 +5,16 @@ import Footer from "../components/footer/footer"
 import img from "./../public/img/exid.svg"
 import Slider from "react-slick"
 import image from "./../public/img/imge.jpg"
-import Services2 from "./services2"
+import PagesDate from "./pagesDate";
+import {useState} from "react";
+import pol from "../public/img/pol.jpg";
+import pol2 from "./../public/img/pol2.jpg"
+import pol3 from "./../public/img/pol3.jpg"
+import pol4 from "./../public/img/pol4.jpg"
 
 
 export default function Pageservices() {
+    const [services, setServices] = useState({img: pol, pol2, pol3,pol4})
     const settings = {
         dots: false,
         arrows: true,
@@ -18,6 +24,43 @@ export default function Pageservices() {
         autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
+    };
+
+    const settings1 = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        speed: 3000,
+        autoplaySpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
     return (
         <div>
@@ -45,7 +88,7 @@ export default function Pageservices() {
                                 <Slider {...settings} >
                                     <div>
                                         <div className="pageservices-general__block__img">
-                                            <Image src={image} alt="img"/>
+                                            <Image src={services. img} alt="img"/>
                                         </div>
                                     </div>
                                     <div>
@@ -53,13 +96,6 @@ export default function Pageservices() {
                                             <Image src={image} alt="img"/>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div className="pageservices-general__block__img">
-                                            <Image src={image} alt="img"/>
-                                        </div>
-                                    </div>
-
-
                                 </Slider>
                             </div>
 
@@ -70,7 +106,7 @@ export default function Pageservices() {
                                     <h1 className="pageservices-general__block__title">Бассейны из полипропилена</h1>
 
                                     <div className="pageservices-general__block__veneta">
-                                        <p className="pageservices-general__block__item2">
+                                        <p onClick={() => setServices()} className="pageservices-general__block__item2">
                                             Бассейны, спроектированные и
                                             Наша компания изготавливает бассейны для дома и дачи из полипропилена любых
                                             форм и конфигураций на собственной производственной площадке в городе
@@ -105,7 +141,28 @@ export default function Pageservices() {
 
                 </div>
             </div>
-            <Services2/>
+            <div className="services2">
+                <div className="services2-general">
+                    <Slider {...settings1}>
+
+                        {
+                            PagesDate.map(el => {
+                                return (
+                                    <div key={el.id} onClick={() => setServices({img: el.img, item: el.item})}>
+                                        <div className="services2-general__block">
+                                            <Image src={el.img} alt="img"/>
+                                            <h1 className="services2-general__title">{el.title}</h1>
+                                            <p className="services2-general__item">{el.item}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+
+                    </Slider>
+
+                </div>
+            </div>
             <Footer/>
         </div>
     )
