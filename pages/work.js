@@ -5,7 +5,7 @@ import Footer from "../components/footer/footer"
 import img from "./../public/img/exid.svg"
 import Slider from "react-slick"
 import bay from "./../public/img/bay.jpg"
-import treh from "./../public/img/treh.jpg"
+// import treh from "./../public/img/treh.jpg"
 import xag from "./../public/img/xag.jpg"
 import kv from "./../public/img/kv.svg"
 import work2date from "./work2date";

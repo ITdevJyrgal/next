@@ -13,9 +13,8 @@ export default function Reviews() {
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
-
             {
-                breakpoint: 900,
+                breakpoint: 912,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -23,7 +22,7 @@ export default function Reviews() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -37,23 +36,15 @@ export default function Reviews() {
             <div className="reviews-general">
                 <div style={{display: "flex", alignItems: "center"}}>
                     <div className="about-general__width"/>
-                    <h1 className="about-general__title">НАШИ РАБОТЫ</h1>
+                    <h1 className="about-general__title">ОТЗЫВЫ</h1>
                     <div className="about-general__width"/>
                 </div>
 
                 <Slider {...settings}>
                     <div>
                         <div
-                            className="reviews-general__block relative"
-                            style={{
-                                width: "413px",
-                                height: "210px",
-                               padding:"10px 20px",
-                                boxShadow:'0 20px 20px rgba(192, 192, 192, 0.42)',
-                                margin: '0 56px',
-                                cursor:"grab"
-                            }}>
-                            <h1 className="text-2xl p-3">Ryan Florence</h1>
+                            className="reviews-general__block ">
+                            <h1 className="reviews-general__title2">Ryan Florence</h1>
                             <p style={{
                                 color: "black",
                             }}>Здравствуйте дороги читатели отзыва о каркасном бассейне
@@ -64,14 +55,14 @@ export default function Reviews() {
                     </div>
                     <div>
                         <div
-                            className="reviews-general__block relative  shadow hover:shadow-lg shadow-inner"
+                            className="reviews-general__block "
                             style={{
                                 width: "413px",
                                 height: "210px",
-                                marginLeft:'116px'
+                                marginLeft: '116px'
                             }}>
                             <h1 className="text-2xl p-3">Ryan Florence</h1>
-                            <div className="flex items-center justify-center">
+                            <div className="reviews-general__video">
                                 <iframe width="300" height="180" src="https://www.youtube.com/embed/PXGycbkbtW0"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -82,16 +73,8 @@ export default function Reviews() {
                     </div>
                     <div>
                         <div
-                            className="reviews-general__block relative"
-                            style={{
-                                width: "413px",
-                                height: "210px",
-                                padding:"10px 20px",
-                                boxShadow:'0 20px 20px rgba(192, 192, 192, 0.42)',
-                                margin: '0 56px',
-                                cursor:"grab"
-                            }}>
-                            <h1 className="text-2xl p-3">Ryan Florence</h1>
+                            className="reviews-general__block ">
+                            <h1 className="reviews-general__title2">Ryan Florence</h1>
                             <p style={{
                                 color: "black",
                             }}>Здравствуйте дороги читатели отзыва о каркасном бассейне
@@ -102,14 +85,14 @@ export default function Reviews() {
                     </div>
                     <div>
                         <div
-                            className="reviews-general__block relative  shadow hover:shadow-lg shadow-inner"
+                            className="reviews-general__block "
                             style={{
                                 width: "413px",
                                 height: "210px",
-                                marginLeft:'116px'
+                                marginLeft: '116px'
                             }}>
                             <h1 className="text-2xl p-3">Ryan Florence</h1>
-                            <div className="flex items-center justify-center">
+                            <div className="reviews-general__video">
                                 <iframe width="300" height="180" src="https://www.youtube.com/embed/PXGycbkbtW0"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -120,16 +103,8 @@ export default function Reviews() {
                     </div>
                     <div>
                         <div
-                            className="reviews-general__block relative"
-                            style={{
-                                width: "413px",
-                                height: "210px",
-                                padding:"10px 20px",
-                                boxShadow:'0 20px 20px rgba(192, 192, 192, 0.42)',
-                                margin: '0 56px',
-                                cursor:"grab"
-                            }}>
-                            <h1 className="text-2xl p-3">Ryan Florence</h1>
+                            className="reviews-general__block ">
+                            <h1 className="reviews-general__title2">Ryan Florence</h1>
                             <p style={{
                                 color: "black",
                             }}>Здравствуйте дороги читатели отзыва о каркасном бассейне
@@ -140,14 +115,14 @@ export default function Reviews() {
                     </div>
                     <div>
                         <div
-                            className="reviews-general__block relative  shadow hover:shadow-lg shadow-inner"
+                            className="reviews-general__block "
                             style={{
                                 width: "413px",
                                 height: "210px",
-                                marginLeft:'116px'
+                                marginLeft: '116px'
                             }}>
                             <h1 className="text-2xl p-3">Ryan Florence</h1>
-                            <div className="flex items-center justify-center">
+                            <div className="reviews-general__video">
                                 <iframe width="300" height="180" src="https://www.youtube.com/embed/PXGycbkbtW0"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

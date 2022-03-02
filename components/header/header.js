@@ -43,7 +43,7 @@ export default function Header() {
                                         display: "flex",
                                         alignItems: "center"
                                     }}>
-                                        <h1 className="header-general__nav ">Главная</h1>
+                                        <a href="/">   <h1 className="header-general__nav ">Главная</h1></a>
 
                                         <h1 className="header-general__nav  ">О нас</h1>
 

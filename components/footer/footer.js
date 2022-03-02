@@ -11,7 +11,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <h1 className="footer-general__title2">Меню</h1>
-                        <p className="footer-general__item2">Главная</p>
+                        <a href="/">  <p className="footer-general__item2">Главная</p></a>
                         <p className="footer-general__item2">О нас</p>
                         <p className="footer-general__item2">Услуги</p>
                     </div>

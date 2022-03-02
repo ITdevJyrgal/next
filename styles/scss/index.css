@@ -413,6 +413,20 @@
   color: #00AE84;
   margin-bottom: 4%;
 }
+.reviews-general__block {
+  width: 413px;
+  height: 210px;
+  padding: 10px 20px;
+  box-shadow: 0 20px 20px rgba(192, 192, 192, 0.42);
+  margin: 0 110px;
+  cursor: grab;
+  position: relative;
+}
+.reviews-general__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .question {
   padding: 50px 0;
@@ -565,6 +579,20 @@
 .footer-general__zero {
   color: white;
   font-size: 17px;
+}
+
+.error {
+  min-height: 100vh;
+}
+
+.error2 {
+  text-align: center;
+  font-size: 30px;
+  color: blue;
+  cursor: pointer;
+  margin-top: -180px;
+  margin-left: 39%;
+  position: absolute;
 }
 
 .work {

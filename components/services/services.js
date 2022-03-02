@@ -1,8 +1,6 @@
 import Image from "next/image";
-
 import ServicesDate from "./servicesDate";
-import Slider from "react-slick";
-import PagesDate from "../../pages/pagesDate";
+
 
 export default function Services() {
 
