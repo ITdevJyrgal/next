@@ -34,8 +34,7 @@ export default function Question() {
 
                                 rules={{required: true}}
                             />
-
-
+                            
                         </form>
 
 

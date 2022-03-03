@@ -36,16 +36,16 @@ export default function Pageservices() {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -53,10 +53,11 @@ export default function Pageservices() {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+
                 }
             }
         ]
@@ -101,17 +102,17 @@ export default function Pageservices() {
                                 <div style={{
                                     marginTop: "50px"
                                 }}>
-                                    <h1 className="pageservices-general__block__title">Бассейны из полипропилена</h1>
+                                    <h1 className="work-general__block__title">Бассейны из полипропилена</h1>
 
-                                    <div className="pageservices-general__block__veneta">
-                                        <p onClick={() => setServices()} className="pageservices-general__block__item2">
+                                    <div className="work-general__block__veneta">
+                                        <p onClick={() => setServices()} className="work-general__block__item2">
                                             Бассейны, спроектированные и
                                             Наша компания изготавливает бассейны для дома и дачи из полипропилена любых
                                             форм и конфигураций на собственной производственной площадке в городе
                                             Бишкек. Основные формы полипропиленового бассейна, это прямоугольная и
                                             цилиндрическая форма.</p>
 
-                                        <p className="pageservices-general__block__item2"> Изготовление бассейнов в
+                                        <p className="work-general__block__item2"> Изготовление бассейнов в
                                             компании ZERO WASTE SERVICE ориентировано на
                                             использование полимеризированного пропилена (полипропилена), исходная
                                             прочность которого позволяет изготавливать для заказчика пластиковые
@@ -120,7 +121,7 @@ export default function Pageservices() {
                                             впишется в любое дизайнерское решение, будут удачно смотреться и рядом с
                                             цветущим садом и с летней аллеей или детской площадкой.
                                         </p>
-                                        <p className="pageservices-general__block__item2">
+                                        <p className="work-general__block__item2">
                                             Полипропиленовые бассейны производства ZERO WASTE SERVICE изготавливаются
                                             той глубины и формы, которая продиктована Вашим архитекторским проектом и
                                             пожеланиями - время шаблонных решений и надоевших форм прошло. И даже если в
@@ -146,7 +147,11 @@ export default function Pageservices() {
                         {
                             PagesDate.map(el => {
                                 return (
-                                    <div key={el.id} onClick={() => setServices({img: el.img, item: el.item})}>
+                                    <div key={el.id} onClick={() => setServices({img: el.img, item: el.item})} style={{
+                                        display:"flex",
+                                        justifyContent:"center",
+                                        alignItems:"center"
+                                    }}>
                                         <div className="services2-general__block">
                                             <Image src={el.img} alt="img"/>
                                             <h1 className="services2-general__title">{el.title}</h1>

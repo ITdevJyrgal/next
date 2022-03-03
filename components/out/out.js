@@ -41,7 +41,7 @@ export default function Out() {
                                     <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
                                 <div  className="our-general__block__gen3">
 
-                                    <Link href={"/services"}>
+                                    <Link href={"/servicespage"}>
                                         <Image src={Pod} alt="img" className="our-general__block__pod"/>
                                     </Link>
                                 </div>
@@ -69,7 +69,7 @@ export default function Out() {
                             <div className="our-general__block__span">
                                     <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
                                 <div   className="our-general__block__gen3">
-                                    <Link href={"/services"}>
+                                    <Link href={"/servicespage"}>
                                         <Image src={Pod} alt="img" className="our-general__block__pod"/>
                                     </Link>
                                 </div>
@@ -98,7 +98,7 @@ export default function Out() {
                             <div className="our-general__block__span">
                                     <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
                                 <div   className="our-general__block__gen3">
-                                    <Link href={"/services"}>
+                                    <Link href={"/servicespage"}>
                                         <Image src={Pod} alt="img" className="our-general__block__pod"/>
                                     </Link>
                                 </div>

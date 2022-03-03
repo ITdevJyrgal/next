@@ -1,9 +1,7 @@
-
 import Link from "next/link"
 import img from "../assets/img/exid.svg"
 import Slider from "react-slick"
 import bay from "../assets/img/bay.jpg"
-// import treh from "./../public/img/treh.jpg"
 import xag from "../assets/img/xag.jpg"
 import kv from "../assets/img/kv.svg"
 import work2date from "../components/work2date";
@@ -21,6 +19,14 @@ export default function Work() {
         autoplaySpeed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 414,
+                settings: {
+                    autoplay:false,
+                }
+            }
+            ]
     };
 
     const settings1 = {
@@ -34,27 +40,36 @@ export default function Work() {
         slidesToScroll: 1,
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    autoplay:false,
+                }
+            },
+            {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    autoplay:false,
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    initialSlide: 2
+                    initialSlide: 2,
+                    autoplay:false,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    autoplay:true,
                 }
             }
         ]
@@ -77,7 +92,8 @@ export default function Work() {
 
                         <div style={{
                             display: "flex",
-                            justifyContent: "space-around"
+                            justifyContent: "space-around",
+                            flexWrap:"wrap"
                         }}>
                             <div className="work-general__block">
                                 <Slider {...settings} >
@@ -100,29 +116,39 @@ export default function Work() {
                             </div>
 
 
-                            <div>
-                                <h1 className="work-general__block__title">Бассейны из полипропилена</h1>
-                                <div style={{
-                                    display: "flex"
-                                }}>
-                                    <Image src={kv} alt="img"/>
-                                    <p className="work-general__block__item">335 m5</p>
+                            <div style={{
+                                display:"flex",
+                                justifyContent:"center",
+                                alignItems:"center",
+                                flexDirection:"column"
+                            }}>
+                                <div>
+                              <h1 className="work-general__block__title">Бассейны из полипропилена</h1>
                                 </div>
-                                <div className="work-general__block__veneta">
-                                    <p className="work-general__block__item2">Бассейны, спроектированные и
-                                        изготовленные по индивидуальному заказу La
-                                        Veneta
-                                        Forme, изготовлены из полипропилена, имеют гладкую поверхность, не
-                                        подверженную
-                                        осмосу, не требуют покрытия, имеют гарантированно стойкие цвета, устойчивы к
-                                        низким температурам, УФ-лучам и химическим веществам. вещества. Благодаря
-                                        большой универсальности этого материала можно изготовить бассейны любой
-                                        формы и
-                                        размера по запросу, учитывая площадь и стоимость производства, согласованные
-                                        с
-                                        клиентом.</p>
+                                <div>
+                                    <div style={{
+                                        display: "flex"
+                                    }}>
+                                        <Image src={kv} alt="img"/>
+                                        <p className="work-general__block__item">335 m5</p>
+                                    </div>
                                 </div>
-
+                                <div>
+                                    <div className="work-general__block__veneta">
+                                        <p className="work-general__block__item2">Бассейны, спроектированные и
+                                            изготовленные по индивидуальному заказу La
+                                            Veneta
+                                            Forme, изготовлены из полипропилена, имеют гладкую поверхность, не
+                                            подверженную
+                                            осмосу, не требуют покрытия, имеют гарантированно стойкие цвета, устойчивы к
+                                            низким температурам, УФ-лучам и химическим веществам. вещества. Благодаря
+                                            большой универсальности этого материала можно изготовить бассейны любой
+                                            формы и
+                                            размера по запросу, учитывая площадь и стоимость производства, согласованные
+                                            с
+                                            клиентом.</p>
+                                    </div>
+                                </div>
 
                             </div>
 
@@ -139,7 +165,7 @@ export default function Work() {
                             work2date.map(el => {
                                 return (
                                     <div key={el.id} onClick={() => setWorking({img: el.img, title: el.title})}>
-                                        <div>
+                                        <div className="work2-general__img">
                                             <Image src={el.img} alt="img"/>
                                             <p className="work2-general__title">{el.title}</p>
                                         </div>

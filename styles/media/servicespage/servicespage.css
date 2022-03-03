@@ -1,0 +1,12 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 415px) {
+  .services2-general__block {
+    margin: 15px 32px;
+  }
+}
+
+/*# sourceMappingURL=servicespage.css.map */
