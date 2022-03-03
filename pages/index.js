@@ -1,27 +1,1 @@
-import HomeLayout from "../components/HomeLayout";
-import Hero from "../components/hero/hero";
-import About from "../components/about/about";
-import AboutUs from "../components/aboutus/aboutus";
-import Services from "../components/services/services";
-import Job from "../components/job/job";
-import Out from "../components/out/out";
-import Reviews from "../components/reviews/reviews";
-import Question from "../components/question/question";
-import Modal from "./../components/header/modal/modal"
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
-export default function Home() {
-    return (
-        <HomeLayout>
-            <Hero/>
-            <About/>
-            <AboutUs/>
-            <Services/>
-            <Job/>
-            <Out/>
-            <Reviews/>
-            <Question/>
-            <Modal/>
-        </HomeLayout>
-    )
-}
+import HomeLayout from "../components/HomeLayout";import Hero from "../components/hero/hero";import About from "../components/about/about";import AboutUs from "../components/aboutus/aboutus";import Services from "../components/services/services";import Job from "../components/job/job";import Out from "../components/out/out";import Reviews from "../components/reviews/reviews";import Question from "../components/question/question";import Modal from "./../components/header/modal/modal"export default function Home() {    return (        <HomeLayout>            <Hero/>            <About/>            <AboutUs/>            <Services/>            <Job/>            <Out/>            <Reviews/>            <Question/>            <Modal/>        </HomeLayout>    )}
