@@ -1,7 +1,7 @@
 import pol from "../public/img/pol.jpg";
-import pol2 from "./../public/img/pol2.jpg"
-import pol3 from "./../public/img/pol3.jpg"
-import pol4 from "./../public/img/pol4.jpg"
+import pol2 from "../public/img/pol2.jpg"
+import pol3 from "../public/img/pol3.jpg"
+import pol4 from "../public/img/pol4.jpg"
 const pagesDates = [
     {
         id:1,

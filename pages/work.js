@@ -6,7 +6,7 @@ import bay from "./../public/img/bay.jpg"
 // import treh from "./../public/img/treh.jpg"
 import xag from "./../public/img/xag.jpg"
 import kv from "./../public/img/kv.svg"
-import work2date from "./work2date";
+import work2date from "../components/work2date";
 import {useState} from "react";
 import HomeLayout from "../components/HomeLayout";
 

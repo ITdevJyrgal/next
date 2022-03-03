@@ -5,7 +5,7 @@ import Footer from "../components/footer/footer"
 import img from "./../public/img/exid.svg"
 import Slider from "react-slick"
 import image from "./../public/img/imge.jpg"
-import PagesDate from "./pagesDate";
+import PagesDate from "../components/pagesDate";
 import {useState} from "react";
 import pol from "../public/img/pol.jpg";
 import pol2 from "./../public/img/pol2.jpg"
