@@ -42,8 +42,9 @@
         display: flex;
         flex-direction: column;
         font-size: 20px;
-        a {
-          text-decoration: none;
+        text-decoration: none;
+        &:hover {
+          color: #00E3AD;
         }
       }
     }
@@ -58,7 +59,7 @@
       padding: 5px 0;
       transition: .3s;
       cursor: pointer;
-
+   text-decoration: none;
       &:hover {
         color: #00E3AD;
       }

@@ -1,7 +1,7 @@
 import Img from "../assets/img/404.svg"
 import Child from "../assets/img/child.svg"
 import Exed from "../assets/img/exed.svg"
-
+import Image from "next/image"
 
 import Link from 'next/link'
 
@@ -13,15 +13,15 @@ export default function Error() {
             <div className="container">
                 <Link href={"/"}>
                     <div className="error-general__img">
-                        <img src={Exed} alt="img"/>
+                        <Image src={Exed} alt="img"/>
                     </div>
                 </Link>
                 <div className="error-general">
                     <div>
-                        <img src={Img} alt="img"/>
+                        <Image src={Img} alt="img"/>
                     </div>
                     <div>
-                        <img src={Child} alt="img" className="error-general__img"/>
+                        <Image src={Child} alt="img" className="error-general__img"/>
                         <p className="error-general__title">Что-то пошло не так!</p>
                         <p className="error-general__item">Пожалуйста, повторите
                             попытку позже!</p>

@@ -24,10 +24,8 @@ export default function Out() {
                         <div className="our-general__block__square">
                             <Image src={Bay} alt="img" className="our-general__block__img"/>
                             <div className="our-general__block__span">
-                                <div>
                                     <p className="our-general__block__gen">Трехэтажный загородный коттедж с плоской
                                         крышей</p>
-                                </div>
                                 <div className="our-general__block__gen2">
                                     <Link href={"/work"}>
                                         <Image src={Pod} alt="" className="our-general__block__pod"/>
@@ -40,9 +38,7 @@ export default function Out() {
                         <div className="our-general__block__square">
                             <Image src={Bas} alt="img" className="our-general__block__img2"/>
                             <div className="our-general__block__span">
-                                <div>
                                     <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
-                                </div>
                                 <div  className="our-general__block__gen3">
 
                                     <Link href={"/services"}>
@@ -56,10 +52,9 @@ export default function Out() {
                         <div className="our-general__block__square">
                             <Image src={Treh} alt="img" className="our-general__block__img"/>
                             <div className="our-general__block__span">
-                                <div>
+
                                     <p className="our-general__block__gen">Трехэтажный загородный коттедж с плоской
                                         крышей</p>
-                                </div>
                                 <div  className="our-general__block__gen2">
                                     <Link href={"/work"}>
                                         <Image src={Pod} alt="" className="our-general__block__pod"/>
@@ -72,9 +67,7 @@ export default function Out() {
                         <div className="our-general__block__square">
                             <Image src={Hai} alt="img" className="our-general__block__img2"/>
                             <div className="our-general__block__span">
-                                <div>
                                     <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
-                                </div>
                                 <div   className="our-general__block__gen3">
                                     <Link href={"/services"}>
                                         <Image src={Pod} alt="img" className="our-general__block__pod"/>
@@ -87,10 +80,10 @@ export default function Out() {
                         <div className="our-general__block__square">
                             <Image src={Xag} alt="img" className="our-general__block__img"/>
                             <div className="our-general__block__span">
-                                <div>
+
                                     <p className="our-general__block__gen">Трехэтажный загородный коттедж с плоской
                                         крышей</p>
-                                </div>
+
                                 <div  className="our-general__block__gen2">
                                     <Link href={"/work"}>
                                         <Image src={Pod} alt="" className="our-general__block__pod"/>
@@ -103,9 +96,7 @@ export default function Out() {
                         <div className="our-general__block__square">
                             <Image src={Drag} alt="img" className="our-general__block__img2"/>
                             <div className="our-general__block__span">
-                                <div>
                                     <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
-                                </div>
                                 <div   className="our-general__block__gen3">
                                     <Link href={"/services"}>
                                         <Image src={Pod} alt="img" className="our-general__block__pod"/>

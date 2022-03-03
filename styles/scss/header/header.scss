@@ -18,6 +18,12 @@
       font-size: 26px;
       color: white;
       margin-bottom: 10px;
+      text-decoration: none;
+      transition: .3s;
+
+      &:hover {
+        color: white;
+      }
     }
 
     &__nav {
@@ -28,6 +34,7 @@
       color: #FFFFFF;
       transition: .3s;
       padding: 0 40px;
+      text-decoration: none;
 
       &:hover {
         color: #00AE84;
@@ -65,14 +72,11 @@
       border: none;
       margin-bottom: 20px;
       cursor: pointer;
-      //&:hover {
-      //  background: transparent;
-      //  border: 1px solid #00AE84;
-      //}
-
-      &__text {
-        padding-left: 10px;
+      &:hover {
+        background: transparent;
+        border: 1px solid #00AE84;
       }
+
     }
 
     &__tell {

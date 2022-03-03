@@ -56,7 +56,7 @@ export default function Header() {
                         {/*<button className="header-general__off" onClick={switchTheme}>off</button>*/}
                         <Switch checked={dark} onChange={() => setDark(!dark)}/>
                         <button className="header-general__btn ">
-                            <span className="header-general__btn__text">Свяжитесь с нами</span>
+                          Свяжитесь с нами
                         </button>
 
                         {/*<Modal active={modalActive} setActive={setModalActive} />*/}
