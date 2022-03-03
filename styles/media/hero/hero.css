@@ -1,4 +1,9 @@
 @media (max-width: 1200px) {
+  #hero {
+    background: url("./../../../assets/img/bg.png") no-repeat center/cover;
+    min-height: 100vh;
+  }
+
   .container {
     width: 90%;
   }
@@ -12,6 +17,11 @@
   }
 }
 @media (max-width: 1024px) {
+  #hero {
+    background: url("./../../../assets/img/bg.png") no-repeat center/cover;
+    min-height: 100vh;
+  }
+
   #hero .hero-general__items2 {
     padding: 0 6%;
   }
@@ -21,6 +31,11 @@
   }
 }
 @media (max-width: 768px) {
+  #hero {
+    background: url("./../../../assets/img/bg.png") no-repeat center/cover;
+    min-height: 100vh;
+  }
+
   #hero .hero-general__title {
     font-size: 30px;
   }
@@ -38,6 +53,11 @@
   }
 }
 @media (max-width: 576px) {
+  #hero {
+    background: url("./../../../assets/img/bg.png") no-repeat center/cover;
+    min-height: 100vh;
+  }
+
   #hero .hero-general__title {
     font-size: 24px;
   }
@@ -61,6 +81,11 @@
   }
 }
 @media (max-width: 415px) {
+  #hero {
+    background: url("./../../../assets/img/bg.png") no-repeat center/cover;
+    min-height: 100vh;
+  }
+
   #hero .hero-general__titles {
     flex-wrap: wrap;
   }
@@ -77,6 +102,11 @@
   }
 }
 @media (max-width: 375px) {
+  #hero {
+    background: url("./../../../assets/img/bg.png") no-repeat center/cover;
+    min-height: 100vh;
+  }
+
   #hero .hero-general__title {
     font-size: 19px;
   }
@@ -95,6 +125,11 @@
   }
 }
 @media (max-width: 320px) {
+  #hero {
+    background: url("./../../../assets/img/bg.png") no-repeat center/cover;
+    min-height: 100vh;
+  }
+
   #hero .hero-general__title {
     font-size: 17px;
   }
