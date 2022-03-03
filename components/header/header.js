@@ -42,31 +42,32 @@ export default function Header() {
                             <a className="header-general__logo ">ZeroWaste</a>
                         </Link>
                     </div>
-                </div>
-                <div style={{
-                    display: "flex",
-                    alignItems: "center",
-                }}>
-                    <Link href={"/"}><a className="header-general__nav ">Главная</a></Link>
 
-                    <Link href={"/"}><a className="header-general__nav  ">О нас</a></Link>
+                    <div style={{
+                        display: "flex",
+                        alignItems: "center",
+                    }}>
+                        <Link href={"/"}><a className="header-general__nav ">Главная</a></Link>
 
-                    <Link href={"/"}><a className="header-general__nav  ">Услуги</a></Link>
+                        <Link href={"/"}><a className="header-general__nav  ">О нас</a></Link>
 
-                    {/*<button className="header-general__off" onClick={switchTheme}>off</button>*/}
-                    <Switch checked={dark} onChange={() => setDark(!dark)}/>
-                    <button className="header-general__btn ">
-                        <span className="header-general__btn__text">Свяжитесь с нами</span>
-                    </button>
+                        <Link href={"/"}><a className="header-general__nav  ">Услуги</a></Link>
 
-                    {/*<Modal active={modalActive} setActive={setModalActive} />*/}
+                        {/*<button className="header-general__off" onClick={switchTheme}>off</button>*/}
+                        <Switch checked={dark} onChange={() => setDark(!dark)}/>
+                        <button className="header-general__btn ">
+                            <span className="header-general__btn__text">Свяжитесь с нами</span>
+                        </button>
+
+                        {/*<Modal active={modalActive} setActive={setModalActive} />*/}
 
 
+                    </div>
                 </div>
             </div>
 
 
         </header>
 
-)
+    )
 }

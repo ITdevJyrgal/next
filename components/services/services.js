@@ -1,5 +1,5 @@
 import ServicesDate from "./servicesDate";
-
+import Image from "next/image"
 
 export default function Services() {
 
@@ -16,7 +16,7 @@ export default function Services() {
                         {
                             ServicesDate.map(el => (
                                 <div className="services-general__block" key={el.id}>
-                                    <img src={el.img} alt="img" className="services-general__block__img"/>
+                                    <Image src={el.img} alt="img" className="services-general__block__img"/>
                                     <p className="services-general__block__item">{el.item}</p>
                                 </div>
                             ))

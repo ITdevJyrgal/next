@@ -1,5 +1,5 @@
 import Image from "next/image";
-import mate from "./../../public/img/mate.png"
+import mate from "../../assets/img/mate.png"
 export default function About () {
     return (
             <div className="about">

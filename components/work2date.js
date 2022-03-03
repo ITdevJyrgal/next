@@ -1,4 +1,4 @@
-import img from "../public/img/img.jpg"
+import img from "../assets/img/img.jpg"
 
 
 const Work2date = [

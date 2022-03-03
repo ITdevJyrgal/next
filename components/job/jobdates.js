@@ -1,10 +1,10 @@
-import vstr from "./../../public/img/vstr.svg"
-import kon from "./../../public/img/kon.svg"
-import sog from "./../../public/img/sog.svg"
-import dog from "./../../public/img/dog.svg"
-import ana from "./../../public/img/ana.svg"
-import mon from "./../../public/img/mon.svg"
-import eks from "./../../public/img/eks.svg"
+import vstr from "../../assets/img/vstr.svg"
+import kon from "../../assets/img/kon.svg"
+import sog from "../../assets/img/sog.svg"
+import dog from "../../assets/img/dog.svg"
+import ana from "../../assets/img/ana.svg"
+import mon from "../../assets/img/mon.svg"
+import eks from "../../assets/img/eks.svg"
 
 const Date = [
     {

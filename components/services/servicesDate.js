@@ -1,11 +1,11 @@
-import bas from "./../../public/img/bas.svg"
-import ems from "./../../public/img/ems.svg"
-import lit from "./../../public/img/lit.svg"
-import per from "./../../public/img/per.svg"
-import sor from "./../../public/img/sor.svg"
-import dos from "./../../public/img/dos.svg"
-import jir from "./../../public/img/jir.svg"
-import sep from "./../../public/img/sep.svg"
+import bas from "../../assets/img/bas.svg"
+import ems from "../../assets/img/ems.svg"
+import lit from "../../assets/img/lit.svg"
+import per from "../../assets/img/per.svg"
+import sor from "../../assets/img/sor.svg"
+import dos from "../../assets/img/dos.svg"
+import jir from "../../assets/img/jir.svg"
+import sep from "../../assets/img/sep.svg"
 
 const Date = [
     {

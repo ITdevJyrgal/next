@@ -1,15 +1,15 @@
 
 import Link from "next/link"
-import img from "./../public/img/exid.svg"
+import img from "../assets/img/exid.svg"
 import Slider from "react-slick"
-import bay from "./../public/img/bay.jpg"
+import bay from "../assets/img/bay.jpg"
 // import treh from "./../public/img/treh.jpg"
-import xag from "./../public/img/xag.jpg"
-import kv from "./../public/img/kv.svg"
+import xag from "../assets/img/xag.jpg"
+import kv from "../assets/img/kv.svg"
 import work2date from "../components/work2date";
 import {useState} from "react";
 import HomeLayout from "../components/HomeLayout";
-
+import Image from "next/image"
 export default function Work() {
     const [working, setWorking] = useState({img: bay})
     const settings = {
@@ -71,7 +71,7 @@ export default function Work() {
                                 marginBottom: "20px",
                                 cursor: "pointer"
                             }}>
-                                <img src={img} alt="img"/>
+                                <Image src={img} alt="img"/>
                             </div>
                         </Link>
 
@@ -83,17 +83,17 @@ export default function Work() {
                                 <Slider {...settings} >
                                     <div>
                                         <div>
-                                            <img src={working.img} alt="img"/>
+                                            <Image src={working.img} alt="img"/>
                                         </div>
                                     </div>
                                     <div>
                                         <div>
-                                            <img src={bay} alt="img"/>
+                                            <Image src={bay} alt="img"/>
                                         </div>
                                     </div>
                                     <div>
                                         <div>
-                                            <img src={xag} alt="img"/>
+                                            <Image src={xag} alt="img"/>
                                         </div>
                                     </div>
                                 </Slider>
@@ -105,7 +105,7 @@ export default function Work() {
                                 <div style={{
                                     display: "flex"
                                 }}>
-                                    <img src={kv} alt="img"/>
+                                    <Image src={kv} alt="img"/>
                                     <p className="work-general__block__item">335 m5</p>
                                 </div>
                                 <div className="work-general__block__veneta">
@@ -140,7 +140,7 @@ export default function Work() {
                                 return (
                                     <div key={el.id} onClick={() => setWorking({img: el.img, title: el.title})}>
                                         <div>
-                                            <img src={el.img} alt="img"/>
+                                            <Image src={el.img} alt="img"/>
                                             <p className="work2-general__title">{el.title}</p>
                                         </div>
                                     </div>

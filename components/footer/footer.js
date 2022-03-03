@@ -13,11 +13,11 @@ export default function Footer() {
                     </div>
                     <div>
                         <h1 className="footer-general__title2">Меню</h1>
-                        <Link href={"/"}><a className="header-general__nav ">Главная</a></Link>
+                        <Link href={"/"}><a className="footer-general__title2__nav ">Главная</a></Link>
 
-                        <Link href={"/about"}><a className="header-general__nav  ">О нас</a></Link>
+                        <Link href={"/about"}><a className="footer-general__title2__nav  ">О нас</a></Link>
 
-                        <Link href={"/services"}><a className="header-general__nav  ">Услуги</a></Link>
+                        <Link href={"/services"}><a className="footer-general__title2__nav  ">Услуги</a></Link>
                     </div>
                     <div>
                         <h1 className="footer-general__title2">Контакты</h1>

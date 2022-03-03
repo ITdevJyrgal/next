@@ -1,16 +1,14 @@
-import Header from "./../components/header/header"
 import Image from "next/image"
 import Link from "next/link"
-import Footer from "../components/footer/footer"
-import img from "./../public/img/exid.svg"
+import img from "../assets/img/exid.svg"
 import Slider from "react-slick"
-import image from "./../public/img/imge.jpg"
+import image from "../assets/img/imge.jpg"
 import PagesDate from "../components/pagesDate";
 import {useState} from "react";
-import pol from "../public/img/pol.jpg";
-import pol2 from "./../public/img/pol2.jpg"
-import pol3 from "./../public/img/pol3.jpg"
-import pol4 from "./../public/img/pol4.jpg"
+import pol from "../assets/img/pol.jpg";
+import pol2 from "../assets/img/pol2.jpg"
+import pol3 from "../assets/img/pol3.jpg"
+import pol4 from "../assets/img/pol4.jpg"
 import HomeLayout from "../components/HomeLayout";
 
 
@@ -75,7 +73,7 @@ export default function Pageservices() {
                                 marginBottom: "20px",
                                 cursor: "pointer"
                             }}>
-                                <img src={img} alt={img}/>
+                                <Image src={img} alt={img}/>
                             </div>
                         </Link>
 
@@ -88,12 +86,12 @@ export default function Pageservices() {
                                 <Slider {...settings} >
                                     <div>
                                         <div className="pageservices-general__block__img">
-                                            <img src={services.img} alt="img"/>
+                                            <Image src={services.img} alt="img"/>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="pageservices-general__block__img">
-                                            <img src={image} alt="img"/>
+                                            <Image src={image} alt="img"/>
                                         </div>
                                     </div>
                                 </Slider>
@@ -150,7 +148,7 @@ export default function Pageservices() {
                                 return (
                                     <div key={el.id} onClick={() => setServices({img: el.img, item: el.item})}>
                                         <div className="services2-general__block">
-                                            <img src={el.img} alt="img"/>
+                                            <Image src={el.img} alt="img"/>
                                             <h1 className="services2-general__title">{el.title}</h1>
                                             <p className="services2-general__item">{el.item}</p>
                                         </div>

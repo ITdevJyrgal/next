@@ -1,6 +1,6 @@
-import Img from "./../public/img/404.svg"
-import Child from "./../public/img/child.svg"
-import Exed from "./../public/img/exed.svg"
+import Img from "../assets/img/404.svg"
+import Child from "../assets/img/child.svg"
+import Exed from "../assets/img/exed.svg"
 
 
 import Link from 'next/link'
