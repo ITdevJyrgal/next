@@ -14,31 +14,31 @@ export default function Question() {
                         <h1 className="question-general__block__title"> У Вас есть
                             вопрос или
                             предложение?</h1>
-                        <div>
-                            <label>
-                                <input type="name" name="name" placeholder="Ваша имя"
-                                       className="question-general__block__input"/>
-                            </label>
-                            <label>
-                                {/*<input type="tel" name="tel" placeholder="+996 550 01 22 08" className="question-general__block__input"/>*/}
-                                <form onSubmit={handleSubmit} className="question-general__block__input2">
-                                    <Controller
-                                        render={() => (
-                                            <PhoneInput
-                                                country={"kg"}
-                                            />
-                                        )}
-                                        value="KG"
-                                        name="phone_number"
-                                        control={control}
 
-                                        rules={{required: true}}
+
+                        <input type="name" name="name" placeholder="Ваша имя"
+                               className="question-general__block__input"/>
+
+
+                        {/*<input type="tel" name="tel" placeholder="+996 550 01 22 08" className="question-general__block__input"/>*/}
+                        <form onSubmit={handleSubmit} className="question-general__block__input2">
+                            <Controller
+                                render={() => (
+                                    <PhoneInput
+                                        country={"kg"}
                                     />
+                                )}
+                                value="KG"
+                                name="phone_number"
+                                control={control}
+
+                                rules={{required: true}}
+                            />
 
 
-                                </form>
-                            </label>
-                        </div>
+                        </form>
+
+
                         <div>
                             <button className="question-general__block__btn">Оставить заявку</button>
                         </div>

@@ -106,9 +106,9 @@ export default function Out() {
                             </div>
                         </div>
                     </div>
-                    <div className="our-general__btn">
-                        <button className="our-general__btn__btns">Смотреть все</button>
-                    </div>
+                    {/*<div className="our-general__btn">*/}
+                    {/*    <button className="our-general__btn__btns">Смотреть все</button>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>

@@ -14,6 +14,15 @@ export default function Reviews() {
         slidesToScroll: 1,
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    initialSlide: 3
+                }
+            },
+
+            {
                 breakpoint: 912,
                 settings: {
                     slidesToShow: 2,
@@ -21,11 +30,22 @@ export default function Reviews() {
                     initialSlide: 2
                 }
             },
+
             {
                 breakpoint: 768,
                 settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+
+            {
+                breakpoint: 576,
+                settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    initialSlide: 1
                 }
             }
         ]
@@ -45,69 +65,31 @@ export default function Reviews() {
                         <div
                             className="reviews-general__block ">
                             <h1 className="reviews-general__title2">Ryan Florence</h1>
-                            <p style={{
-                                color: "black",
-                            }}>Здравствуйте дороги читатели отзыва о каркасном бассейне
+                            <p className="reviews-general__item">Здравствуйте дороги читатели отзыва о каркасном
+                                бассейне
                                 BestWay. Приобрели его совсем
                                 недавно, и хочется поделится первыми впечатлениями от его обладания. Сборка бассейна
                                 была сделана за тридцать минут вдвоем. Все детали сделаны так что можно его...</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            className="reviews-general__block "
-                            style={{
-                                width: "413px",
-                                height: "210px",
-                                marginLeft: '116px'
-                            }}>
-                            <h1 className="text-2xl p-3">Ryan Florence</h1>
-                            <div className="reviews-general__video">
-                                <iframe width="300" height="180" src="https://www.youtube.com/embed/PXGycbkbtW0"
-                                        title="YouTube video player" frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen/>
-                            </div>
-
                         </div>
                     </div>
                     <div>
                         <div
                             className="reviews-general__block ">
                             <h1 className="reviews-general__title2">Ryan Florence</h1>
-                            <p style={{
-                                color: "black",
-                            }}>Здравствуйте дороги читатели отзыва о каркасном бассейне
-                                BestWay. Приобрели его совсем
-                                недавно, и хочется поделится первыми впечатлениями от его обладания. Сборка бассейна
-                                была сделана за тридцать минут вдвоем. Все детали сделаны так что можно его...</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            className="reviews-general__block "
-                            style={{
-                                width: "413px",
-                                height: "210px",
-                                marginLeft: '116px'
-                            }}>
-                            <h1 className="text-2xl p-3">Ryan Florence</h1>
                             <div className="reviews-general__video">
                                 <iframe width="300" height="180" src="https://www.youtube.com/embed/PXGycbkbtW0"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen/>
                             </div>
-
                         </div>
                     </div>
                     <div>
                         <div
                             className="reviews-general__block ">
                             <h1 className="reviews-general__title2">Ryan Florence</h1>
-                            <p style={{
-                                color: "black",
-                            }}>Здравствуйте дороги читатели отзыва о каркасном бассейне
+                            <p className="reviews-general__item">Здравствуйте дороги читатели отзыва о каркасном
+                                бассейне
                                 BestWay. Приобрели его совсем
                                 недавно, и хочется поделится первыми впечатлениями от его обладания. Сборка бассейна
                                 была сделана за тридцать минут вдвоем. Все детали сделаны так что можно его...</p>
@@ -115,20 +97,37 @@ export default function Reviews() {
                     </div>
                     <div>
                         <div
-                            className="reviews-general__block "
-                            style={{
-                                width: "413px",
-                                height: "210px",
-                                marginLeft: '116px'
-                            }}>
-                            <h1 className="text-2xl p-3">Ryan Florence</h1>
+                            className="reviews-general__block ">
+                            <h1 className="reviews-general__title2">Ryan Florence</h1>
                             <div className="reviews-general__video">
                                 <iframe width="300" height="180" src="https://www.youtube.com/embed/PXGycbkbtW0"
                                         title="YouTube video player" frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen/>
                             </div>
-
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            className="reviews-general__block ">
+                            <h1 className="reviews-general__title2">Ryan Florence</h1>
+                            <p className="reviews-general__item">Здравствуйте дороги читатели отзыва о каркасном
+                                бассейне
+                                BestWay. Приобрели его совсем
+                                недавно, и хочется поделится первыми впечатлениями от его обладания. Сборка бассейна
+                                была сделана за тридцать минут вдвоем. Все детали сделаны так что можно его...</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            className="reviews-general__block ">
+                            <h1 className="reviews-general__title2">Ryan Florence</h1>
+                            <div className="reviews-general__video">
+                                <iframe width="300" height="180" src="https://www.youtube.com/embed/PXGycbkbtW0"
+                                        title="YouTube video player" frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen/>
+                            </div>
                         </div>
                     </div>
                 </Slider>

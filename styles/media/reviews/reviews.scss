@@ -1,0 +1,26 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .reviews-general__block {
+    margin: 0 0;
+    width: 327px;
+    height: 206px;
+  }
+  .reviews-general__title2 {
+    color: black;
+    font-size: 2rem;
+  }
+  .reviews-general__item {
+    color: black;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .reviews-general__block {
+    margin: 0 0;
+    width: 312px;
+    height: 203px;
+  }
+}

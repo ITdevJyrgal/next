@@ -34,7 +34,7 @@
 
     &__block {
       width: 413px;
-      height: 210px;
+      height: 220px;
       padding: 10px 20px;
       box-shadow: 0 20px 20px rgba(192, 192, 192, 0.42);
       margin: 0 110px;
@@ -45,6 +45,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    &__title2 {
+      color: black
+    }
+
+    &__item {
+      color: black;
     }
   }
 }

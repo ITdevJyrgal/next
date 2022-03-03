@@ -1,0 +1,75 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .question-general__block {
+    width: 513px;
+  }
+
+  .question-general__block__btn {
+    width: 410px;
+    height: 55px;
+  }
+
+  .question-general__block__input {
+    width: 285px;
+    height: 55px;
+    margin: 15px 141px;
+  }
+
+  .react-tel-input .form-control {
+    width: 285px;
+  }
+}
+@media (max-width: 415px) {
+  .question-general__block {
+    width: 90%;
+  }
+
+  .question-general__block__btn {
+    width: 188px;
+    height: 55px;
+    font-size: 14px;
+  }
+
+  .question-general__block__input {
+    width: 301px;
+    height: 55px;
+    margin-left: 40%;
+  }
+
+  .react-tel-input .form-control {
+    width: 300px;
+    height: 55px;
+  }
+}
+@media (max-width: 375px) {
+  .question-general__block__input {
+    width: 300px;
+    height: 55px;
+    margin-left: 44%;
+  }
+}
+@media (max-width: 320px) {
+  .question-general__block__title {
+    width: 278px;
+    height: 68px;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    color: #00AE84;
+    margin-bottom: -4px;
+    padding: 0 25px;
+  }
+
+  .question-general__block__input {
+    width: 300px;
+    height: 55px;
+    margin-left: 53%;
+  }
+}
+
+/*# sourceMappingURL=question.css.map */
