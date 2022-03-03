@@ -4,12 +4,10 @@ import {useState} from "react";
 // import Modal from "./modal/modal";
 
 
-
 export default function Header() {
 
-const [modalActive,setModalActive] = useState(true)
+    const [modalActive, setModalActive] = useState(true)
     const [dark, setDark] = useState(false)
-
 
 
     // const theme = createMuiTheme({
@@ -31,42 +29,44 @@ const [modalActive,setModalActive] = useState(true)
     // <Typography variant='h1'>
     // </Typography>
     return (
-        <div>
-            {/*<ThemeProvider theme={theme}>*/}
-                <header className="header">
-                    <div className="container">
-                        {/*<Paper>*/}
-                            {/*<Typography variant='body2'>*/}
-                                <div className="header-general ">
-                                    <div style={{
-                                        cursor: "pointer"
-                                    }}><h1 className="header-general__logo ">ZeroWaste</h1>
-                                    </div>
-                                    <div style={{
-                                        display: "flex",
-                                        alignItems: "center",
-                                    }}>
-                                        <a href="/">   <h1 className="header-general__nav ">Главная</h1></a>
 
-                                        <h1 className="header-general__nav  ">О нас</h1>
-
-                                        <h1 className="header-general__nav  ">Услуги</h1>
-
-                                        {/*<button className="header-general__off" onClick={switchTheme}>off</button>*/}
-                                        <Switch checked={dark} onChange={() => setDark(!dark)}/>
-                                        <button className="header-general__btn ">
-                                            <span className="header-general__btn__text">Свяжитесь с нами</span>
-                                        </button>
-
-                                        {/*<Modal active={modalActive} setActive={setModalActive} />*/}
-
-                                    </div>
-                                </div>
-                            {/*</Typography>*/}
-                        {/*</Paper>*/}
+        <header className="header">
+            <div className="container">
+                {/*<Paper>*/}
+                {/*<Typography variant='body2'>*/}
+                <div className="header-general ">
+                    <div style={{
+                        cursor: "pointer"
+                    }}>
+                        <Link href={'/'}>
+                            <a className="header-general__logo ">ZeroWaste</a>
+                        </Link>
                     </div>
-                </header>
-            {/*</ThemeProvider>*/}
-        </div>
-    )
+                </div>
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                }}>
+                    <Link href={"/"}><a className="header-general__nav ">Главная</a></Link>
+
+                    <Link href={"/"}><a className="header-general__nav  ">О нас</a></Link>
+
+                    <Link href={"/"}><a className="header-general__nav  ">Услуги</a></Link>
+
+                    {/*<button className="header-general__off" onClick={switchTheme}>off</button>*/}
+                    <Switch checked={dark} onChange={() => setDark(!dark)}/>
+                    <button className="header-general__btn ">
+                        <span className="header-general__btn__text">Свяжитесь с нами</span>
+                    </button>
+
+                    {/*<Modal active={modalActive} setActive={setModalActive} />*/}
+
+
+                </div>
+            </div>
+
+
+        </header>
+
+)
 }

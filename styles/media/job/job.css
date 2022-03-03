@@ -1,3 +1,36 @@
+@media (max-width: 576px) {
+  .about-general__width {
+    width: 88%;
+  }
+}
+@media (max-width: 415px) {
+  .about-general__width {
+    width: 51%;
+  }
 
+  .job-general__block {
+    width: 159px;
+    height: 175px;
+  }
+
+  .job-general__block__item {
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .about-general__width {
+    width: 43%;
+  }
+
+  .job-general__block {
+    width: 139px;
+    height: 152px;
+  }
+}
+@media (max-width: 320px) {
+  .about-general__title {
+    font-size: 17px;
+  }
+}
 
 /*# sourceMappingURL=job.css.map */

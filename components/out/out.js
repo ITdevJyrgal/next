@@ -1,4 +1,3 @@
-import Image from "next/image"
 import bay from "./../../public/img/bay.jpg"
 import bas from "./../../public/img/bas.jpg"
 import treh from "./../../public/img/treh.jpg"
@@ -7,8 +6,7 @@ import xag from "./../../public/img/xag.jpg"
 import drag from "./../../public/img/drag.jpg"
 import pod from "./../../public/img/pod.svg"
 import Link from 'next/link'
-import work from "../../pages/work"
-import services from "../../pages/services"
+
 
 export default function Out() {
     return (
@@ -23,53 +21,15 @@ export default function Out() {
                 <div className="our-general">
                     <div className="our-general__block">
                         <div className="our-general__block__square">
-                            <Image src={bay} alt="img" className="our-general__block__img"/>
+                            <img src={bay} alt="img" className="our-general__block__img"/>
                             <div className="our-general__block__span">
                                 <div>
                                     <p className="our-general__block__gen">Трехэтажный загородный коттедж с плоской
                                         крышей</p>
                                 </div>
-                                <div style={{
-                                    marginLeft: '360px',
-                                }}>
-                                    <Link href={"work"}>
-                                        <Image src={pod} alt="" className="our-general__block__pod"/>
-                                    </Link>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div className="our-general__block__square">
-                            <Image src={bas} alt="img" className="our-general__block__img2"/>
-                            <div className="our-general__block__span">
-                                <div>
-                                    <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
-                                </div>
-                                <div style={{
-                                    marginLeft: "210px"
-                                }}>
-
-                                    <Link href={"services"}>
-                                        <Image src={pod} alt="img" className="our-general__block__pod"/>
-                                    </Link>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div className="our-general__block__square">
-                            <Image src={treh} alt="img" className="our-general__block__img"/>
-                            <div className="our-general__block__span">
-                                <div>
-                                    <p className="our-general__block__gen">Трехэтажный загородный коттедж с плоской
-                                        крышей</p>
-                                </div>
-                                <div style={{
-                                    marginLeft: '360px'
-                                }}>
+                                <div className="our-general__block__gen2">
                                     <Link href={"/work"}>
-                                        <Image src={pod} alt="" className="our-general__block__pod"/>
+                                        <img src={pod} alt="" className="our-general__block__pod"/>
                                     </Link>
                                 </div>
 
@@ -77,33 +37,31 @@ export default function Out() {
                         </div>
 
                         <div className="our-general__block__square">
-                            <Image src={hai} alt="img" className="our-general__block__img2"/>
+                            <img src={bas} alt="img" className="our-general__block__img2"/>
                             <div className="our-general__block__span">
                                 <div>
                                     <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
                                 </div>
-                                <div style={{
-                                    marginLeft: "210px"
-                                }}>
+                                <div  className="our-general__block__gen3">
+
                                     <Link href={"/services"}>
-                                        <Image src={pod} alt="img" className="our-general__block__pod"/>
-                                    </Link></div>
+                                        <img src={pod} alt="img" className="our-general__block__pod"/>
+                                    </Link>
+                                </div>
 
                             </div>
                         </div>
 
                         <div className="our-general__block__square">
-                            <Image src={xag} alt="img" className="our-general__block__img"/>
+                            <img src={treh} alt="img" className="our-general__block__img"/>
                             <div className="our-general__block__span">
                                 <div>
                                     <p className="our-general__block__gen">Трехэтажный загородный коттедж с плоской
                                         крышей</p>
                                 </div>
-                                <div style={{
-                                    marginLeft: '360px'
-                                }}>
+                                <div  className="our-general__block__gen2">
                                     <Link href={"/work"}>
-                                        <Image src={pod} alt="" className="our-general__block__pod"/>
+                                        <img src={pod} alt="" className="our-general__block__pod"/>
                                     </Link>
                                 </div>
 
@@ -111,16 +69,45 @@ export default function Out() {
                         </div>
 
                         <div className="our-general__block__square">
-                            <Image src={drag} alt="img" className="our-general__block__img2"/>
+                            <img src={hai} alt="img" className="our-general__block__img2"/>
                             <div className="our-general__block__span">
                                 <div>
                                     <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
                                 </div>
-                                <div style={{
-                                    marginLeft: "210px"
-                                }}>
+                                <div   className="our-general__block__gen3">
                                     <Link href={"/services"}>
-                                        <Image src={pod} alt="img" className="our-general__block__pod"/>
+                                        <img src={pod} alt="img" className="our-general__block__pod"/>
+                                    </Link>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className="our-general__block__square">
+                            <img src={xag} alt="img" className="our-general__block__img"/>
+                            <div className="our-general__block__span">
+                                <div>
+                                    <p className="our-general__block__gen">Трехэтажный загородный коттедж с плоской
+                                        крышей</p>
+                                </div>
+                                <div  className="our-general__block__gen2">
+                                    <Link href={"/work"}>
+                                        <img src={pod} alt="" className="our-general__block__pod"/>
+                                    </Link>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className="our-general__block__square">
+                            <img src={drag} alt="img" className="our-general__block__img2"/>
+                            <div className="our-general__block__span">
+                                <div>
+                                    <p className="our-general__block__gen">Хай-тек в Дранишниках</p>
+                                </div>
+                                <div   className="our-general__block__gen3">
+                                    <Link href={"/services"}>
+                                        <img src={pod} alt="img" className="our-general__block__pod"/>
                                     </Link>
                                 </div>
 

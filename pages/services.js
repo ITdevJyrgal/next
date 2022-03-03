@@ -11,10 +11,11 @@ import pol from "../public/img/pol.jpg";
 import pol2 from "./../public/img/pol2.jpg"
 import pol3 from "./../public/img/pol3.jpg"
 import pol4 from "./../public/img/pol4.jpg"
+import HomeLayout from "../components/HomeLayout";
 
 
 export default function Pageservices() {
-    const [services, setServices] = useState({img: pol, pol2, pol3,pol4})
+    const [services, setServices] = useState({img: pol, pol2, pol3, pol4})
     const settings = {
         dots: false,
         arrows: true,
@@ -63,8 +64,7 @@ export default function Pageservices() {
         ]
     };
     return (
-        <div>
-            <Header/>
+        <HomeLayout>
             <div className="pageservices">
                 <div className="container">
                     <div className="pageservices-general">
@@ -75,7 +75,7 @@ export default function Pageservices() {
                                 marginBottom: "20px",
                                 cursor: "pointer"
                             }}>
-                                <Image src={img} alt={img}/>
+                                <img src={img} alt={img}/>
                             </div>
                         </Link>
 
@@ -88,12 +88,12 @@ export default function Pageservices() {
                                 <Slider {...settings} >
                                     <div>
                                         <div className="pageservices-general__block__img">
-                                            <Image src={services. img} alt="img"/>
+                                            <img src={services.img} alt="img"/>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="pageservices-general__block__img">
-                                            <Image src={image} alt="img"/>
+                                            <img src={image} alt="img"/>
                                         </div>
                                     </div>
                                 </Slider>
@@ -101,7 +101,7 @@ export default function Pageservices() {
 
                             <div>
                                 <div style={{
-                                    marginTop:"50px"
+                                    marginTop: "50px"
                                 }}>
                                     <h1 className="pageservices-general__block__title">Бассейны из полипропилена</h1>
 
@@ -150,7 +150,7 @@ export default function Pageservices() {
                                 return (
                                     <div key={el.id} onClick={() => setServices({img: el.img, item: el.item})}>
                                         <div className="services2-general__block">
-                                            <Image src={el.img} alt="img"/>
+                                            <img src={el.img} alt="img"/>
                                             <h1 className="services2-general__title">{el.title}</h1>
                                             <p className="services2-general__item">{el.item}</p>
                                         </div>
@@ -163,7 +163,8 @@ export default function Pageservices() {
 
                 </div>
             </div>
-            <Footer/>
-        </div>
+        </HomeLayout>
+
+
     )
 }

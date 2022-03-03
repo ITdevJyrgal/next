@@ -1,6 +1,8 @@
+import Link from 'next/link'
+
 export default function Footer() {
     return (
-        <div className='footer'>
+        <footer className='footer'>
             <div className="container">
                 <div className="footer-general">
                     <div>
@@ -11,9 +13,11 @@ export default function Footer() {
                     </div>
                     <div>
                         <h1 className="footer-general__title2">Меню</h1>
-                        <a href="/">  <p className="footer-general__item2">Главная</p></a>
-                        <p className="footer-general__item2">О нас</p>
-                        <p className="footer-general__item2">Услуги</p>
+                        <Link href={"/"}><a className="header-general__nav ">Главная</a></Link>
+
+                        <Link href={"/about"}><a className="header-general__nav  ">О нас</a></Link>
+
+                        <Link href={"/services"}><a className="header-general__nav  ">Услуги</a></Link>
                     </div>
                     <div>
                         <h1 className="footer-general__title2">Контакты</h1>
@@ -25,8 +29,8 @@ export default function Footer() {
                                 display: "flex",
                                 flexDirection: "column"
                             }}>
-                                <a href="tel:0550 01 22 08" className="footer-general__item2">0550 01 22 08</a>
-                                <a href="tel:0777 32 95 46" className="footer-general__item2">0777 32 95 46</a>
+                                <a href={"tel:0550 01 22 08"} className="footer-general__item2">0550 01 22 08</a>
+                                <a href={"tel:0777 32 95 46"} className="footer-general__item2">0777 32 95 46</a>
                             </div>
                         </div>
 
@@ -59,6 +63,6 @@ export default function Footer() {
                 </div>
             </div>
 
-        </div>
+        </footer>
     )
 }

@@ -1,7 +1,5 @@
-import Header from "./../components/header/header"
-import Image from "next/image"
+
 import Link from "next/link"
-import Footer from "../components/footer/footer"
 import img from "./../public/img/exid.svg"
 import Slider from "react-slick"
 import bay from "./../public/img/bay.jpg"
@@ -10,6 +8,7 @@ import xag from "./../public/img/xag.jpg"
 import kv from "./../public/img/kv.svg"
 import work2date from "./work2date";
 import {useState} from "react";
+import HomeLayout from "../components/HomeLayout";
 
 export default function Work() {
     const [working, setWorking] = useState({img: bay})
@@ -61,8 +60,7 @@ export default function Work() {
         ]
     };
     return (
-        <div>
-            <Header/>
+        <HomeLayout>
             <div className="work">
                 <div className="container">
                     <div className="work-general">
@@ -73,60 +71,60 @@ export default function Work() {
                                 marginBottom: "20px",
                                 cursor: "pointer"
                             }}>
-                                <Image src={img} alt="img"/>
+                                <img src={img} alt="img"/>
                             </div>
                         </Link>
 
                         <div style={{
-                            display:"flex",
-                            justifyContent:"space-around"
+                            display: "flex",
+                            justifyContent: "space-around"
                         }}>
                             <div className="work-general__block">
                                 <Slider {...settings} >
                                     <div>
                                         <div>
-                                            <Image src={working.img} alt="img"/>
+                                            <img src={working.img} alt="img"/>
                                         </div>
                                     </div>
                                     <div>
                                         <div>
-                                            <Image src={bay} alt="img"/>
+                                            <img src={bay} alt="img"/>
                                         </div>
                                     </div>
                                     <div>
                                         <div>
-                                            <Image src={xag} alt="img"/>
+                                            <img src={xag} alt="img"/>
                                         </div>
                                     </div>
                                 </Slider>
                             </div>
 
 
-                                <div>
-                                    <h1 className="work-general__block__title">Бассейны из полипропилена</h1>
-                                    <div style={{
-                                        display: "flex"
-                                    }}>
-                                        <Image src={kv} alt="img"/>
-                                        <p className="work-general__block__item">335 m5</p>
-                                    </div>
-                                    <div className="work-general__block__veneta">
-                                        <p className="work-general__block__item2">Бассейны, спроектированные и
-                                            изготовленные по индивидуальному заказу La
-                                            Veneta
-                                            Forme, изготовлены из полипропилена, имеют гладкую поверхность, не
-                                            подверженную
-                                            осмосу, не требуют покрытия, имеют гарантированно стойкие цвета, устойчивы к
-                                            низким температурам, УФ-лучам и химическим веществам. вещества. Благодаря
-                                            большой универсальности этого материала можно изготовить бассейны любой
-                                            формы и
-                                            размера по запросу, учитывая площадь и стоимость производства, согласованные
-                                            с
-                                            клиентом.</p>
-                                    </div>
-
-
+                            <div>
+                                <h1 className="work-general__block__title">Бассейны из полипропилена</h1>
+                                <div style={{
+                                    display: "flex"
+                                }}>
+                                    <img src={kv} alt="img"/>
+                                    <p className="work-general__block__item">335 m5</p>
                                 </div>
+                                <div className="work-general__block__veneta">
+                                    <p className="work-general__block__item2">Бассейны, спроектированные и
+                                        изготовленные по индивидуальному заказу La
+                                        Veneta
+                                        Forme, изготовлены из полипропилена, имеют гладкую поверхность, не
+                                        подверженную
+                                        осмосу, не требуют покрытия, имеют гарантированно стойкие цвета, устойчивы к
+                                        низким температурам, УФ-лучам и химическим веществам. вещества. Благодаря
+                                        большой универсальности этого материала можно изготовить бассейны любой
+                                        формы и
+                                        размера по запросу, учитывая площадь и стоимость производства, согласованные
+                                        с
+                                        клиентом.</p>
+                                </div>
+
+
+                            </div>
 
                         </div>
                     </div>
@@ -142,7 +140,7 @@ export default function Work() {
                                 return (
                                     <div key={el.id} onClick={() => setWorking({img: el.img, title: el.title})}>
                                         <div>
-                                            <Image src={el.img} alt="img"/>
+                                            <img src={el.img} alt="img"/>
                                             <p className="work2-general__title">{el.title}</p>
                                         </div>
                                     </div>
@@ -154,7 +152,8 @@ export default function Work() {
 
                 </div>
             </div>
-            <Footer/>
-        </div>
+        </HomeLayout>
+
+
     )
 }
