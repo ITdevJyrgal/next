@@ -13,14 +13,14 @@
         @apply min-h-screen;
         --color: #000;
         --block: white;
-        --background:rgba(0, 174, 132, 0.13);
+        --background-color:rgba(0, 174, 132, 0.13);
     }
 
     ::selection {
         @apply text-white bg-indigo-500;
         --color:#fff;
         --block:#004333;
-        --background:white;
+        --background-color:rgba(0, 174, 132, 0.13);
     }
 
 

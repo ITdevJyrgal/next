@@ -47,13 +47,13 @@
       align-items: center;
     }
     &__title2 {
-      color: black;
+      color: var(--block);
       font-size: 22px;
       font-weight: 600;
     }
 
     &__item {
-      color: black;
+      color: var(--block);
     }
   }
 }

@@ -73,3 +73,24 @@
 ::placeholder {
   color: #00AE84;
 }
+
+.react-tel-input .form-control {
+  font-size: 16px;
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+  border-radius: 5px;
+  width: 300px;
+  color: black;
+}
+.react-tel-input .special-label {
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  left: 25px;
+  display: block;
+  background: white;
+  color: black;
+  padding: 0 5px;
+  font-size: 13px;
+  white-space: nowrap;
+}
