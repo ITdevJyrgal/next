@@ -35,9 +35,6 @@ export default function Modal() {
                             </div>
                             <input type="name" name="name" placeholder="Ваша имя"
                                    className="question-general__block__input"/>
-
-
-                            {/*<input type="tel" name="tel" placeholder="+996 550 01 22 08" className="question-general__block__input"/>*/}
                             <form onSubmit={handleSubmit} className="question-general__block__input2">
                                 <Controller
                                     render={() => (
