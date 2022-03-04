@@ -2,6 +2,7 @@ import Link from "next/link"
 import {useTheme} from "next-themes";
 import {SunIcon, MoonIcon} from "@heroicons/react/solid";
 import {useState, useEffect} from "react";
+import BurgerMenu from "./../burgerMenu";
 
 
 export default function Header() {
@@ -57,7 +58,9 @@ export default function Header() {
                         <Link href={"/"}><a className="header-general__nav  ">О нас</a></Link>
 
                         <Link href={"/"}><a className="header-general__nav  ">Услуги</a></Link>
+
                         <button className="header-general__close">{renderThemeChanger()}</button>
+                        <BurgerMenu/>
                         <button className="header-general__btn ">
                             Свяжитесь с нами
                         </button>

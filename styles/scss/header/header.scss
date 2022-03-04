@@ -75,9 +75,9 @@
       margin-top: 15px;
       font-size: 17px;
       transition: .3s;
-      border: none;
       margin-bottom: 20px;
       cursor: pointer;
+      border: 1px solid transparent;
       &:hover {
         background: transparent;
         border: 1px solid #00AE84;
