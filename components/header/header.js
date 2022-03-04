@@ -3,7 +3,7 @@ import {useTheme} from "next-themes";
 import {SunIcon, MoonIcon} from "@heroicons/react/solid";
 import {useState, useEffect} from "react";
 import BurgerMenu from "./../burgerMenu";
-
+import Modal from './modal/modal';
 
 export default function Header() {
 
@@ -61,9 +61,7 @@ export default function Header() {
 
                         <button className="header-general__close">{renderThemeChanger()}</button>
                         <BurgerMenu/>
-                        <button className="header-general__btn ">
-                            Свяжитесь с нами
-                        </button>
+                            <Modal/>
                     </div>
                 </div>
             </div>
