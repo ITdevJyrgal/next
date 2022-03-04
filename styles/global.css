@@ -1,26 +1,25 @@
 @import "scss/index.scss";
 @import "icons.css";
 
-* {
-    --background: #fff;
-    --text-primary: #000;
-    --text-secondary: #055dc2;
-    --accent: #055dc2;
-    --border: rgb(155, 155, 155);
-    --form-bg: #fff;
-    --block: black;
-}
 
-[data-theme='dark'] {
-    --background: #000;
-    --text-primary: #fff;
-    --text-secondary: #055dc2;
-    --accent: #055dc2;
-    --border: rgb(53, 53, 53);
-    --form-bg: #191919;
-    --block: white;
-}
 
-body {
-    transition: all .7s;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100;
+        @apply min-h-screen;
+        transition: all .5s;
+    }
+
+    ::selection {
+        @apply text-white bg-indigo-500;
+    }
+
+
+    .btn{
+        @apply inline-block px-5 py-3 rounded-lg hover:bg-indigo-600 transition duration-300 shadow-lg bg-indigo-500 text-white capitalize tracking-wider font-semibold text-sm sm:text-xl focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 whitespace-nowrap
+    }
 }

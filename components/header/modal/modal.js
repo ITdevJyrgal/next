@@ -1,9 +1,11 @@
-export default function Modal ({active, setActive}) {
-    return (
-        <div className="modal">
-             <div className="modal__content">
+import React from 'react';
 
-             </div>
+const Modal = () => {
+    return (
+        <div>
+            
         </div>
-    )
-}
+    );
+};
+
+export default Modal;

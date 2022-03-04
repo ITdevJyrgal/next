@@ -1,7 +1,6 @@
 @media (max-width: 1200px) {
   .aboutus {
-    background: url("../../../assets/img/about.png") no-repeat center/cover;
-    min-height: 80vh;
+    background: #222222;
   }
 
   .container {
@@ -20,8 +19,7 @@
 }
 @media (max-width: 1024px) {
   .aboutus {
-    background: url("../../../assets/img/about.png") no-repeat center/cover;
-    min-height: 80vh;
+    background: #222222;
   }
 
   .aboutus-general__block {
@@ -37,8 +35,7 @@
 }
 @media (max-width: 768px) {
   .aboutus {
-    background: url("../../../assets/img/about.png") no-repeat center/cover;
-    min-height: 80vh;
+    background: #222222;
   }
 
   .aboutus-general__block__title {
@@ -58,8 +55,7 @@
 }
 @media (max-width: 576px) {
   .aboutus {
-    background: url("../../../assets/img/about.png") no-repeat center/cover;
-    min-height: 80vh;
+    background: #222222;
   }
 
   .aboutus-general__block {
@@ -68,8 +64,7 @@
 }
 @media (max-width: 415px) {
   .aboutus {
-    background: url("../../../assets/img/about.png") no-repeat center/cover;
-    min-height: 80vh;
+    background: #222222;
   }
 
   .aboutus-general__block__item {
@@ -84,8 +79,7 @@
 }
 @media (max-width: 375px) {
   .aboutus {
-    background: url("../../../assets/img/about.png") no-repeat center/cover;
-    min-height: 80vh;
+    background: #222222;
   }
 
   .aboutus-general__block {
@@ -94,8 +88,7 @@
 }
 @media (max-width: 320px) {
   .aboutus {
-    background: url("../../../assets/img/about.png") no-repeat center/cover;
-    min-height: 80vh;
+    background: #222222;
   }
 
   .aboutus-general__block__title {

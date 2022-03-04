@@ -1,39 +1,44 @@
 import Link from "next/link"
-import Switch from "@material-ui/core/Switch";
-import {useState} from "react";
-// import Modal from "./modal/modal";
+import {useTheme} from "next-themes";
+import {SunIcon, MoonIcon} from "@heroicons/react/solid";
+import {useState, useEffect} from "react";
 
 
 export default function Header() {
 
-    const [modalActive, setModalActive] = useState(true)
-    const [dark, setDark] = useState(false)
+    const {systemTheme, theme, setTheme} = useTheme();
+    const [mounted, setMounted] = useState(false);
 
+    useEffect(() => {
+        setMounted(true);
+    }, [])
 
-    // const theme = createMuiTheme({
-    //     palette: {
-    //         type: dark ? 'dark' : 'light',
-    //     },
-    // })
+    const renderThemeChanger = () => {
+        if (!mounted) return null;
 
-    // const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
-    //
-    // const switchTheme = () => {
-    //     const newTheme = theme === 'light' ? 'dark' : 'light';
-    //     setTheme(newTheme)
-    // } data-theme={theme}
-    // <Typography variant='h1'>
-    //     </Typography>
-    // <Typography variant='h1'>
-    // </Typography>
-    // <Typography variant='h1'>
-    // </Typography>
+        const currentTheme = theme === "system" ? systemTheme : theme;
+
+        if (currentTheme === "dark") {
+            return (
+                <SunIcon className="w-7 h-7 text-yellow-500 " role="button" onClick={() => setTheme('light')}/>
+
+            )
+        } else {
+            return (
+                <MoonIcon className="w-7 h-7 text-gray-900 " role="button" onClick={() => setTheme('dark')}/>
+            )
+        }
+    };
+
     return (
 
-        <header className="header">
+        <header className="header"
+                style={{
+                    position: "fixed",
+                    width: "100%",
+                    zIndex: "12",
+                }}>
             <div className="container">
-                {/*<Paper>*/}
-                {/*<Typography variant='body2'>*/}
                 <div className="header-general ">
                     <div style={{
                         cursor: "pointer"
@@ -52,16 +57,10 @@ export default function Header() {
                         <Link href={"/"}><a className="header-general__nav  ">О нас</a></Link>
 
                         <Link href={"/"}><a className="header-general__nav  ">Услуги</a></Link>
-
-                        {/*<button className="header-general__off" onClick={switchTheme}>off</button>*/}
-                        <Switch checked={dark} onChange={() => setDark(!dark)}/>
+                        <button className="header-general__close">{renderThemeChanger()}</button>
                         <button className="header-general__btn ">
-                          Свяжитесь с нами
+                            Свяжитесь с нами
                         </button>
-
-                        {/*<Modal active={modalActive} setActive={setModalActive} />*/}
-
-
                     </div>
                 </div>
             </div>
@@ -71,3 +70,6 @@ export default function Header() {
 
     )
 }
+
+
+
