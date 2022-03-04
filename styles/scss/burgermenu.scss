@@ -273,7 +273,6 @@ select:focus-visible {
       bottom: 3px;
       width: 0;
       height: 2px;
-      background: red;
       transition: .3s;
     }
 
@@ -281,9 +280,6 @@ select:focus-visible {
       width: 100%;
     }
 
-    &:hover {
-      color: red;
-    }
 
     .nav-item2 {
       font-weight: 700;
