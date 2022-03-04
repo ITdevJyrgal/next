@@ -13,7 +13,7 @@ import HomeLayout from "../components/HomeLayout";
 
 
 export default function Pageservices() {
-    const [services, setServices] = useState({img: pol, pol2, pol3, pol4})
+    const [services, setServices] = useState({img: image, pol, pol2, pol3, pol4})
     const settings = {
         dots: false,
         arrows: true,

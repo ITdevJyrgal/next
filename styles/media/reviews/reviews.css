@@ -10,13 +10,18 @@
   }
 
   .reviews-general__title2 {
-    color: black;
+    color: var(--color);
     font-size: 2rem;
   }
 
   .reviews-general__item {
-    color: black;
+    color: var(--color);
     font-size: 13px;
+  }
+}
+@media (max-width: 375px) {
+  .reviews-general__block {
+    margin: 0 27px;
   }
 }
 @media (max-width: 320px) {
