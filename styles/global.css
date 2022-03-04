@@ -11,11 +11,16 @@
     body {
         @apply bg-gray-50 text-gray-900 dark:bg-black dark:text-gray-100;
         @apply min-h-screen;
-        transition: all .5s;
+        --color: #000;
+        --block: white;
+        --background:rgba(0, 174, 132, 0.13);
     }
 
     ::selection {
         @apply text-white bg-indigo-500;
+        --color:#fff;
+        --block:#004333;
+        --background:white;
     }
 
 

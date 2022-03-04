@@ -25,7 +25,7 @@
       font-weight: normal;
       font-size: 18px;
       line-height: 21px;
-      color: #004333;
+      color: var(--block);
       margin-bottom: 4%;
     }
 
@@ -35,7 +35,7 @@
       font-weight: normal;
       font-size: 18px;
       line-height: 21px;
-      color: #004333;
+      color: var(--block);
     }
     &__ser {
       font-family: 'Arial', sans-serif;
@@ -43,7 +43,7 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 21px;
-      color: #004333;
+      color: var(--block);
     }
     &__img {
       width: 596px;

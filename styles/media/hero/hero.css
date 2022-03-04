@@ -14,6 +14,10 @@
   #hero .hero-general__block {
     margin-left: -90px;
   }
+
+  #hero .hero-general__title {
+    color: var(--color);
+  }
 }
 @media (max-width: 1024px) {
   #hero {
