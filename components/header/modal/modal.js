@@ -1,15 +1,14 @@
 import React from "react";
-import {Controller, useForm} from "react-hook-form";
-import PhoneInput from "react-phone-input-2";
+import {useForm} from "react-hook-form";
+
 import ModalClose from "./../../../assets/img/modalclose.svg";
 import Image from "next/image"
 import {useState} from 'react'
-// import axiosApi from "./../../../pages/api/axiosApi"
+
 import axios from "axios";
 
 export default function Modal() {
     const [showModal, setShowModal] = useState(false);
-    const {control, handleSubmit} = useForm();
     const [value, setValue] = useState({
         name: "",
         phone: ""
@@ -20,6 +19,17 @@ export default function Modal() {
             {...value, [e.target.phone]: e.target.value}
         )
     }
+    const [vdata , setVdata] = useState([])
+
+
+    const {register, handleSubmit, formState: {errors}} = useForm();
+    const onSubmit = data => {
+        axios.post("https://zero-back-01.herokuapp.com/api/pushTelagram", data)
+            .then(() => alert("Успешно отправлено!"))
+        setVdata(data)
+        console.log(data)
+    };
+    console.log(errors);
 
     const submit = () => {
         axios.post("https://zero-back-01.herokuapp.com/api/pushTelagram", value)
@@ -48,31 +58,14 @@ export default function Modal() {
                                 </div>
 
                             </div>
-                            <input type="text" name="name"
-                                   onChange={(e) => valueHandler(e)}
-                                   placeholder="Ваша имя"
-                                   className="question-general__block__input"/>
-                            <form onSubmit={handleSubmit} className="question-general__block__input2">
-                                <Controller
-                                    render={() => (
-                                        <PhoneInput
-                                            country={"kg"}
-                                        />
-                                    )}
-                                    name="text"
-                                    control={control}
-                                    onChange={(e) => valueHandler(e)}
-                                    rules={{required: true}}
-                                />
+                            <form onSubmit={handleSubmit(onSubmit)}>
+                                <input className={errors.name ? "question-general__block__input__error" : "question-general__block__input"} type="text"
+                                       placeholder="Имя " {...register("name", {required: true, maxLength: 80})} />
+                                <input className={errors.phone ? "question-general__block__input__error" : "question-general__block__input"} type="number"
+                                       placeholder="Номер  +996 ..." {...register("phone", {required: true, maxLength: 100})} />
+
+                                <input disabled={!vdata} type="submit" className={"question-general__block__btn"}/>
                             </form>
-                            <div>
-                                <button
-                                    onClick={submit}
-                                    className="question-general__block__btn"
-                                >
-                                    Оставить заявку
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
