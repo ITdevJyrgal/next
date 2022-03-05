@@ -29,6 +29,17 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .modal-general {
+    width: 102%;
+    height: 110vh;
+    background: rgba(0, 0, 0, 0.44);
+    position: fixed;
+    margin-top: 23%;
+    margin-left: -42%;
+  }
+}
+
 @media (max-width: 1024px) {
   .modal-general {
     width: 100%;
