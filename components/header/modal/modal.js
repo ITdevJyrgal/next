@@ -4,7 +4,8 @@ import PhoneInput from "react-phone-input-2";
 import ModalClose from "./../../../assets/img/modalclose.svg";
 import Image from "next/image"
 import {useState} from 'react'
-import axiosApi from "./../../../pages/api/axiosApi"
+// import axiosApi from "./../../../pages/api/axiosApi"
+import axios from "axios";
 
 export default function Modal() {
     const [showModal, setShowModal] = useState(false);
@@ -14,11 +15,14 @@ export default function Modal() {
         phone: ""
     })
     const valueHandler = (e) => {
-        setValue({...value, [e.target.name]: e.target.value})
+        setValue(
+            {...value, [e.target.name]: e.target.value},
+            {...value, [e.target.phone]: e.target.value}
+        )
     }
 
     const submit = () => {
-        axiosApi.post("/api/pushTelagram", value)
+        axios.post("https://zero-back-01.herokuapp.com/api/pushTelagram", value)
             .then(() => alert("Успешно отправлено!"))
     }
 
@@ -44,7 +48,7 @@ export default function Modal() {
                                 </div>
 
                             </div>
-                            <input type="text" name="name" value={value.name} id=""
+                            <input type="text" name="name"
                                    onChange={(e) => valueHandler(e)}
                                    placeholder="Ваша имя"
                                    className="question-general__block__input"/>
@@ -53,24 +57,20 @@ export default function Modal() {
                                     render={() => (
                                         <PhoneInput
                                             country={"kg"}
-
                                         />
                                     )}
-                                    name="phone"
+                                    name="text"
                                     control={control}
                                     onChange={(e) => valueHandler(e)}
-                                    value="phone"
-                                    id="phone"
-
-
                                     rules={{required: true}}
                                 />
-
                             </form>
-
-
                             <div>
-                                <button onClick={submit} className="question-general__block__btn">Оставить заявку
+                                <button
+                                    onClick={submit}
+                                    className="question-general__block__btn"
+                                >
+                                    Оставить заявку
                                 </button>
                             </div>
                         </div>
