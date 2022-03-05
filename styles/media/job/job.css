@@ -9,12 +9,12 @@
   }
 
   .job-general__block {
-    width: 159px;
-    height: 175px;
+    width: 151px;
+    height: 148px;
   }
 
   .job-general__block__item {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 375px) {
@@ -23,8 +23,8 @@
   }
 
   .job-general__block {
-    width: 139px;
-    height: 152px;
+    width: 133px;
+    height: 148px;
   }
 }
 @media (max-width: 320px) {

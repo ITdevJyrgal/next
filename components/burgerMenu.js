@@ -1,10 +1,8 @@
 import Link from "next/link";
 import React, {useEffect} from "react";
 
-// import {useIntl} from "react-intl";
 
 export default function BurgerMenu() {
-    // const {formatMessage, locale} = useIntl()
 
     const menu = () => {
         if (process.browser) {
@@ -43,7 +41,7 @@ export default function BurgerMenu() {
                             О нас
                         </a>
                     </Link>
-                    <Link href={'/services'}>
+                    <Link href={'services'}>
                         <a
                             className="font-medium text-white text-gray-400 text-xl leading-5 mx-4 hover:text-white nav-item">
                             Услуги

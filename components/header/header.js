@@ -55,9 +55,9 @@ export default function Header() {
                     }}>
                         <Link href={"/"}><a className="header-general__nav ">Главная</a></Link>
 
-                        <Link href={"/"}><a className="header-general__nav  ">О нас</a></Link>
+                        <Link href={"/work"}><a className="header-general__nav  ">О нас</a></Link>
 
-                        <Link href={"/"}><a className="header-general__nav  ">Услуги</a></Link>
+                        <Link href={"/servicespage"}><a className="header-general__nav  ">Услуги</a></Link>
 
                         <button className="header-general__close">{renderThemeChanger()}</button>
                         <BurgerMenu/>

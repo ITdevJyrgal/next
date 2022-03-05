@@ -17,7 +17,7 @@ export default function Footer() {
 
                         <Link href={"/work"}><a className="footer-general__title2__nav  ">О нас</a></Link>
 
-                        <Link href={"/services"}><a className="footer-general__title2__nav  ">Услуги</a></Link>
+                        <Link href={"/servicespage"}><a className="footer-general__title2__nav  ">Услуги</a></Link>
                     </div>
                     <div>
                         <h1 className="footer-general__title2">Контакты</h1>

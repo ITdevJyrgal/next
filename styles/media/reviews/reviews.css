@@ -19,6 +19,13 @@
     font-size: 13px;
   }
 }
+@media (max-width: 415px) {
+  .reviews-general__block {
+    margin: 0 44px;
+    width: 327px;
+    height: 206px;
+  }
+}
 @media (max-width: 375px) {
   .reviews-general__block {
     margin: 0 27px;
