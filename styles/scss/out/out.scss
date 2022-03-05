@@ -27,7 +27,9 @@
       flex-wrap: wrap;
       justify-content: center;
 
-
+&__square {
+  margin-left: -10px;
+}
       &__span {
         display: flex;
         align-items: center;
