@@ -51,7 +51,7 @@ export default function Modal() {
                         <div className="question-general__block">
                             <div className="flex justify-content-between items-center">
                                 <h1 className="question-general__block__title"> У Вас есть
-                                    вопрос или
+                                     вопрос или
                                     предложение?</h1>
                                 <div className="modal-general__close" onClick={() => setShowModal(false)}>
                                     <Image src={ModalClose} alt="img"/>
