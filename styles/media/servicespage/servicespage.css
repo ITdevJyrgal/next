@@ -2,10 +2,31 @@
   .container {
     width: 90%;
   }
+
+  .pageservices-general__block {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+  }
 }
 @media (max-width: 415px) {
   .services2-general__block {
     margin: 15px 32px;
+  }
+
+  .pageservices-general__block {
+    width: 600px;
+    height: 227px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 375px) {
+  .pageservices-general__block {
+    width: 600px;
+    height: 214px;
+    overflow: hidden;
+    position: relative;
   }
 }
 
