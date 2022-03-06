@@ -16,16 +16,16 @@ export default function Pageservices() {
     const [services, setServices] = useState({img: image, pol, pol2, pol3, pol4})
     // const [text, setText] = useState({text: title, item})
 
-    const settings = {
-        dots: false,
-        arrows: true,
-        infinite: true,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
+    // const settings = {
+    //     dots: false,
+    //     arrows: true,
+    //     infinite: true,
+    //     autoplay: true,
+    //     speed: 2000,
+    //     autoplaySpeed: 2000,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    // };
     const settings1 = {
         dots: false,
         arrows: false,
@@ -86,18 +86,9 @@ export default function Pageservices() {
                             flexWrap: "wrap"
                         }}>
                             <div className="pageservices-general__block">
-                                <Slider {...settings} >
-                                    <div>
                                         <div className="pageservices-general__block__img">
                                             <Image src={services.img} alt="img"/>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div className="pageservices-general__block__img">
-                                            <Image src={image} alt="img"/>
-                                        </div>
-                                    </div>
-                                </Slider>
                             </div>
 
                             <div>

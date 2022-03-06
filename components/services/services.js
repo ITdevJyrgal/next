@@ -1,6 +1,6 @@
 import ServicesDate from "./servicesDate";
 import Image from "next/image"
-
+import Link from "next/link"
 export default function Services() {
 
     return (
@@ -15,10 +15,12 @@ export default function Services() {
                     <div className="services-general">
                         {
                             ServicesDate.map(el => (
+                                <Link href={"/services-page"}>
                                 <div className="services-general__block" key={el.id}>
                                     <Image src={el.img} alt="img" className="services-general__block__img"/>
                                     <p className="services-general__block__item">{el.item}</p>
                                 </div>
+                                </Link>
                             ))
                         }
                     </div>

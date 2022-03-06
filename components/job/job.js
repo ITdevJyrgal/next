@@ -1,6 +1,7 @@
 import Date from "./jobdates";
 import Image from "next/image";
 
+
 export default function Job() {
     return (
         <div className="job">
@@ -14,10 +15,12 @@ export default function Job() {
                     {
                         Date.map(el => {
                             return (
+
                                 <div className="job-general__block shadow hover:shadow-lg shadow-inner" key={el.id}>
                                     <Image src={el.img} alt="img"/>
                                     <p className="job-general__block__item"> {el.item}</p>
                                 </div>
+
                             )
                         })
                     }

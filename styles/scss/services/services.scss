@@ -36,6 +36,8 @@
       margin: .5rem 1rem;
       padding: 0 1.5rem;
       transition: .2s;
+      cursor: pointer;
+
       &:hover {
         transform: scale(1.1);
       }
