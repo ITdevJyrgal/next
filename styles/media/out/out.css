@@ -2,6 +2,11 @@
   .our-general__block__square {
     margin-left: -3px;
   }
+
+  .our-general__block__square {
+    margin-left: -3px;
+    margin-top: -10px;
+  }
 }
 @media (max-width: 1200px) {
   .container {
