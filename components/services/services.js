@@ -16,8 +16,8 @@ export default function Services() {
                 <div className="services-general">
                     {
                         ServicesDate.map(el => (
-                            <Link href={"/services-page"}>
-                                <div className="services-general__block" key={el.id}>
+                            <Link href={"/services-page"} key={el.id}>
+                                <div className="services-general__block" >
                                     <Image src={el.img} alt="img" className="services-general__block__img"/>
                                     <p className="services-general__block__item">{el.item}</p>
                                 </div>
