@@ -19,14 +19,14 @@ export default function Header() {
 
         const currentTheme = theme === "system" ? systemTheme : theme;
 
-        if (currentTheme === "dark") {
+        if (currentTheme === "light") {
             return (
-                <SunIcon className="w-7 h-7 text-yellow-500 " role="button" onClick={() => setTheme('light')}/>
+                <SunIcon className="w-7 h-7 text-yellow-500 " role="button" onClick={() => setTheme('dark')}/>
 
             )
         } else {
             return (
-                <MoonIcon className="w-7 h-7 text-gray-900 " role="button" onClick={() => setTheme('dark')}/>
+                <MoonIcon className="w-7 h-7 text-gray-900 " role="button" onClick={() => setTheme('light')}/>
             )
         }
     };
@@ -40,7 +40,7 @@ export default function Header() {
                     zIndex: "12",
                 }}>
             <div className="container">
-                <div className="header-general ">
+                <div className="header-general">
                     <div style={{
                         cursor: "pointer"
                     }}>
@@ -55,9 +55,9 @@ export default function Header() {
                     }}>
                         <Link href={"/"}><a className="header-general__nav ">Главная</a></Link>
 
-                        <Link href={"/work"}><a className="header-general__nav  ">О нас</a></Link>
+                        <Link href={"/aboutus"}><a className="header-general__nav  ">О нас</a></Link>
 
-                        <Link href={"/servicespage"}><a className="header-general__nav  ">Услуги</a></Link>
+                        <Link href={"/services-page"}><a className="header-general__nav  ">Услуги</a></Link>
 
                         <button className="header-general__close">{renderThemeChanger()}</button>
                         <BurgerMenu/>

@@ -14,18 +14,7 @@ import HomeLayout from "../components/HomeLayout";
 
 export default function Pageservices() {
     const [services, setServices] = useState({img: image, pol, pol2, pol3, pol4})
-    // const [text, setText] = useState({text: title, item})
 
-    // const settings = {
-    //     dots: false,
-    //     arrows: true,
-    //     infinite: true,
-    //     autoplay: true,
-    //     speed: 2000,
-    //     autoplaySpeed: 2000,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    // };
     const settings1 = {
         dots: false,
         arrows: false,
@@ -86,9 +75,9 @@ export default function Pageservices() {
                             flexWrap: "wrap"
                         }}>
                             <div className="pageservices-general__block">
-                                        <div className="pageservices-general__block__img">
-                                            <Image src={services.img} alt="img"/>
-                                        </div>
+                                <div className="pageservices-general__block__img">
+                                    <Image src={services.img} alt="img"/>
+                                </div>
                             </div>
 
                             <div>
@@ -98,7 +87,7 @@ export default function Pageservices() {
                                     <h1 className="work-general__block__title">{services.title}</h1>
 
                                     <div className="work-general__block__veneta">
-                                        <p  className="work-general__block__item2">
+                                        <p className="work-general__block__item2">
 
                                         </p>
 

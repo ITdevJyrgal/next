@@ -43,6 +43,7 @@ export default function Modal() {
                 type="button"
                 onClick={() => setShowModal(true)}
             >
+                {/*<i className="fas fa-phone mr-2" />*/}
                 Свяжитесь с нами
             </button>
             {showModal && (
