@@ -43,6 +43,7 @@
         flex-direction: column;
         font-size: 20px;
         text-decoration: none;
+
         &:hover {
           color: #00E3AD;
         }
@@ -60,6 +61,7 @@
       transition: .3s;
       cursor: pointer;
       text-decoration: none;
+
       &:hover {
         color: #00E3AD;
       }
@@ -103,11 +105,87 @@
       color: white;
       font-size: 17px;
     }
+
+    &__img {
+      width: 6%;
+    }
+
+    &__motion {
+      color: #ffffff;
+      font-size: 1rem;
+      font-family: "Arial", sans-serif;
+      font-weight: 500;
+      padding-left: 10px;
+    }
+
+    &__general {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__web {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-left: 250px;
+    }
   }
 }
 
 
+@media (max-width: 768px) {
+  .footer-general__web {
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    margin-left: -528px;
+  }
 
+
+}
+
+@media (max-width: 576px) {
+  .footer-general__web {
+    display: flex;
+    align-items: center;
+    padding-top: 4%;
+    margin-left: -636px;
+  }
+  .footer-general__title2 {
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    padding: 0 0;
+    font-weight: bold;
+    width: 188px;
+  }
+
+  .footer-general__item2 {
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 5px 25px;
+  }
+  .footer-general__icon {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    margin: 12px -8px;
+  }
+  .footer-general__title2__nav {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    margin-bottom: 16px;
+    text-decoration: none;
+  }
+
+}
 
 @media (max-width: 415px) {
   .footer-general {
@@ -120,5 +198,30 @@
   .footer-general__title2 {
     font-size: 18px;
     margin: 33px 0 15px 0;
+    width: 0;
   }
+}
+
+@media (max-width: 375px){
+  .footer-general__zero {
+    color: white;
+    font-size: 15px;
+  }
+  .footer-general__img {
+    width: 5%;
+  }
+  .footer-general__web {
+    display: flex;
+    align-items: center;
+    padding-top: 12%;
+    margin-left: -651px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-general__zero {
+    color: white;
+    font-size: 13px;
+  }
+  
 }

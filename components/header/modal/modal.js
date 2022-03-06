@@ -61,8 +61,8 @@ export default function Modal() {
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <input className={errors.name ? "question-general__block__input__error" : "question-general__block__input"} type="text"
                                        placeholder="Имя " {...register("name", {required: true, maxLength: 80})} />
-                                <input className={errors.phone ? "question-general__block__input__error" : "question-general__block__input"} type="number"
-                                       placeholder="Номер  +996 ..." {...register("phone", {required: true, maxLength: 100})} />
+                                <input className={errors.phone ? "question-general__block__input__error" : "question-general__block__input"} type="tel"
+                                name="tel"       placeholder="Номер 505 29 68 29" {...register("phone", {required: true, maxLength: 100})} />
 
                                 <input disabled={!vdata} type="submit" className={"question-general__block__btn"}/>
                             </form>

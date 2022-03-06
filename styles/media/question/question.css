@@ -99,6 +99,12 @@
     height: 55px;
     margin-left: 3%;
   }
+
+  .question-general__block__btn {
+    width: 150px;
+    height: 55px;
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=question.css.map */

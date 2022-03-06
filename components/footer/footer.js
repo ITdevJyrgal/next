@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import motion from "./../../assets/img/motion.svg"
+import Image from "next/image"
 
 export default function Footer() {
     return (
@@ -58,7 +60,22 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="footer-general__width"/>
-                    <h1 className="footer-general__zero">©2018-2021 “ZeroWaste”Все права защищены</h1>
+                    <div className="footer-general__general">
+                        <div>
+                            <h1 className="footer-general__zero">©2018-2021 “ZeroWaste”Все права защищены</h1>
+                        </div>
+                        <a href="https://www.motion-web.io/">
+                            <div className="footer-general__web">
+
+                                <div className="footer-general__img">
+                                    <Image src={motion} alt="img"/>
+                                </div>
+
+                                <h1 className="footer-general__motion"> Студия Motion Web</h1>
+
+                            </div>
+                        </a>
+                    </div>
 
                 </div>
             </div>
