@@ -19,14 +19,14 @@ export default function Header() {
 
         const currentTheme = theme === "system" ? systemTheme : theme;
 
-        if (currentTheme === "light") {
+        if (currentTheme === "dark") {
             return (
-                <SunIcon className="w-7 h-7 text-yellow-500 " role="button" onClick={() => setTheme('dark')}/>
+                <SunIcon className="w-7 h-7 text-yellow-500 " role="button" onClick={() => setTheme('light')}/>
 
             )
         } else {
             return (
-                <MoonIcon className="w-7 h-7 text-gray-900 " role="button" onClick={() => setTheme('light')}/>
+                <MoonIcon className="w-7 h-7 text-gray-900 " role="button" onClick={() => setTheme('dark')}/>
             )
         }
     };
